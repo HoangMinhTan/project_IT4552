@@ -25,4 +25,5 @@ Route::group(['middleware'=>'logout'], function () {
     Route::get('login', 'App\Http\Controllers\LoginController@login')->name('login');
     Route::post('login', 'App\Http\Controllers\LoginController@Plogin')->name('Plogin');
     Route::get('register', 'App\Http\Controllers\RegisterController@register')->name('register');
+    Route::post('register', 'App\Http\Controllers\RegisterController@Pregister')->name('Pregister');
 });
