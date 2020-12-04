@@ -16,8 +16,13 @@ class LoginController extends Controller
         $password = $request['pass'];
 
         if (Auth::attempt(['email' => $email, 'password' => $password]))
-        return view('home');
+            return redirect('bentrong');
         else
-            return view('login.login');
+            return redirect('login');
+    }
+
+    public function logout(){
+        Auth::logout();
+        return redirect('/');
     }
 }

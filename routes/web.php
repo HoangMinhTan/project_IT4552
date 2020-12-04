@@ -13,9 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'App\Http\Controllers\Controller@home');
+Route::group(['middleware'=>'login'], function()
+{
+    Route::get('bentrong', 'App\Http\Controllers\Controller@bentrong')->name('bentrong');
+    Route::get('logout', 'App\Http\Controllers\LoginController@logout')->name('logout');
+});
 
+Route::get('/', 'App\Http\Controllers\Controller@home')->name('home');
 
-Route::get('login', 'App\Http\Controllers\LoginController@login')->name('login');
-Route::post('login', 'App\Http\Controllers\LoginController@Plogin')->name('Plogin');
-Route::get('register', 'App\Http\Controllers\RegisterController@register')->name('register');
+Route::group(['middleware'=>'logout'], function () {
+    Route::get('login', 'App\Http\Controllers\LoginController@login')->name('login');
+    Route::post('login', 'App\Http\Controllers\LoginController@Plogin')->name('Plogin');
+    Route::get('register', 'App\Http\Controllers\RegisterController@register')->name('register');
+});
