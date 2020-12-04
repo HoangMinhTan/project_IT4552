@@ -1,7 +1,7 @@
 @extends('login.master')
 
 @section('content')
-<form class="login100-form validate-form" action="" method="post">
+<form class="login100-form validate-form" action="{{'login'}}" method="post">
 					<input type="hidden" name="_token" value="{{csrf_token()}}">
 					<span class="login100-form-title">
 						Member Login

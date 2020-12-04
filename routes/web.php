@@ -17,5 +17,5 @@ Route::get('/', 'App\Http\Controllers\Controller@home');
 
 
 Route::get('login', 'App\Http\Controllers\LoginController@login')->name('login');
-
+Route::post('login', 'App\Http\Controllers\LoginController@Plogin')->name('Plogin');
 Route::get('register', 'App\Http\Controllers\RegisterController@register')->name('register');
