@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware'=>'login'], function()
 {
-    Route::get('bentrong', 'App\Http\Controllers\Controller@bentrong')->name('bentrong');
+    Route::get('shop', 'App\Http\Controllers\Controller@shop')->name('shop');
     Route::get('logout', 'App\Http\Controllers\LoginController@logout')->name('logout');
 });
 

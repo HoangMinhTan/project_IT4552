@@ -16,7 +16,7 @@ class LoginController extends Controller
         $password = $request['pass'];
 
         if (Auth::attempt(['email' => $email, 'password' => $password]))
-            return redirect('bentrong');
+            return redirect('shop');
         else
             return redirect('login');
     }

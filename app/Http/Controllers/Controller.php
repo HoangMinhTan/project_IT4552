@@ -15,7 +15,7 @@ class Controller extends BaseController
         return view('home.home');
     }
 
-    public function bentrong(){
-        return view('bentrong');
+    public function shop(){
+        return view('home.shop');
     }
 }
