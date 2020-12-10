@@ -17,6 +17,7 @@ Route::group(['middleware'=>'login'], function()
 {
     Route::get('shop', 'App\Http\Controllers\Controller@shop')->name('shop');
     Route::get('logout', 'App\Http\Controllers\LoginController@logout')->name('logout');
+    Route::get('checkout','App\Http\Controllers\CheckoutController@checkout')->name('checkout');
 });
 
 Route::get('/', 'App\Http\Controllers\Controller@home')->name('home');
