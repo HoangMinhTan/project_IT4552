@@ -354,7 +354,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													<input type="hidden" name="amount" value="675.00">
 													<button type="submit" class="shoe-cart pshoe-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
 
-													<a href="#" data-toggle="modal" data-target="#myModal1"></a>
+													<a href="" data-toggle="modal" data-target="#myModal1"></a>
 												</form>
 
 											</div>

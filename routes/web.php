@@ -21,6 +21,14 @@ Route::group(['middleware'=>'login'], function()
 
 Route::get('/', 'App\Http\Controllers\Controller@home')->name('home');
 
+Route::group(['middleware' => 'admin'], function()
+{
+    Route::get('dashboard', 'App\Http\Controllers\AdminController@dashboard')->name('dashboard');
+    Route::get('profile', 'App\Http\Controllers\AdminController@profile')->name('profile');
+});
+
+Route::get('test', 'App\Http\Controllers\AdminController@test')->name('test');
+
 Route::group(['middleware'=>'logout'], function () {
     Route::get('login', 'App\Http\Controllers\LoginController@login')->name('login');
     Route::post('login', 'App\Http\Controllers\LoginController@Plogin')->name('Plogin');
