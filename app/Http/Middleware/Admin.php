@@ -20,7 +20,7 @@ class Admin
         if (Auth::check())
         {
             $user = Auth::user();
-            if ($user['name'] == 'admin')
+            if ($user['role'] <2)
                 return $next($request);
             else return redirect('/');
         }

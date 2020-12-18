@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="zxx">
 
 <head>
-	<title>Downy Shoes an Ecommerce Category Bootstrap Responsive Website Template | Home :: w3layouts</title>
+	<title>Shop Quan ao</title>
 	<!-- custom-theme -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -24,12 +24,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		}
 	</script>
 	<!-- //custom-theme -->
-	<link href="../resources/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<link rel="stylesheet" href="../resources/css/shop.css" type="text/css" media="screen" property="" />
-	<link href="../resources/css/style7.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="../resources/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="template/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="template/css/shop.css" type="text/css" media="screen" property="" />
+	<link href="template/css/style7.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="template/css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- font-awesome-icons -->
-	<link href="../resources/css/font-awesome.css" rel="stylesheet">
+	<link href="template/css/font-awesome.css" rel="stylesheet">
 	<!-- //font-awesome-icons -->
 	<link href="//fonts.googleapis.com/css?family=Montserrat:100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
 	    rel="stylesheet">
@@ -155,7 +155,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="grids_bottom">
 		<div class="style-grids">
 			<div class="col-md-6 style-grid style-grid-1">
-				<img src="../resources/images/b1.jpg" alt="shoe">
+				<img src="template/images/b1.jpg" alt="shoe">
 			</div>
 		</div>
 		<div class="col-md-6 style-grid style-grid-2">
@@ -170,7 +170,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
 			<div class="style-image-2">
-				<img src="../resources/images/b2.jpg" alt="shoe">
+				<img src="template/images/b2.jpg" alt="shoe">
 				<div class="style-grid-2-text">
 					<h3>Air force</h3>
 				</div>
@@ -195,7 +195,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 				</div>
 				<div class="style-image-2">
-					<img src="../resources/images/b4.jpg" alt="shoe">
+					<img src="template/images/b4.jpg" alt="shoe">
 					<div class="style-grid-2-text">
 						<h3>Air force</h3>
 					</div>
@@ -204,7 +204,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-6 grids_sec_2_left">
 
 				<div class="style-image-2">
-					<img src="../resources/images/b3.jpg" alt="shoe">
+					<img src="template/images/b3.jpg" alt="shoe">
 					<div class="style-grid-2-text">
 						<h3>Air force</h3>
 					</div>
@@ -242,64 +242,64 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="item active">
 						<div class="row">
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/images/g1.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="template/images/g1.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/images/g2.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="template/images/g2.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/images/g3.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="template/images/g3.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/images/g4.jpg" alt="Image" style="max-width:100%;"></div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="row">
-							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/images/g5.jpg" alt="Image" style="max-width:100%;"></div>
-							</div>
-							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/images/g6.jpg" alt="Image" style="max-width:100%;"></div>
-							</div>
-							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/images/g2.jpg" alt="Image" style="max-width:100%;"></div>
-							</div>
-							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/images/g1.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="template/images/g4.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 						</div>
 					</div>
 					<div class="item">
 						<div class="row">
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/images/g1.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="template/images/g5.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/images/g2.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="template/images/g6.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/images/g3.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="template/images/g2.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/images/g4.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="template/images/g1.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 						</div>
 					</div>
 					<div class="item">
 						<div class="row">
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/images/g1.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="template/images/g1.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/images/g2.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="template/images/g2.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/images/g3.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="template/images/g3.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/images/g4.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="template/images/g4.jpg" alt="Image" style="max-width:100%;"></div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="row">
+							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+								<div class="thumbnail"><img src="template/images/g1.jpg" alt="Image" style="max-width:100%;"></div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+								<div class="thumbnail"><img src="template/images/g2.jpg" alt="Image" style="max-width:100%;"></div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+								<div class="thumbnail"><img src="template/images/g3.jpg" alt="Image" style="max-width:100%;"></div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+								<div class="thumbnail"><img src="template/images/g4.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 						</div>
 					</div>
@@ -422,15 +422,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="col-md-3 sign-gd flickr-post">
 						<h4>Flickr <span>Posts</span></h4>
 						<ul>
-							<li><a href="single.html"><img src="../resources/images/t1.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="../resources/images/t2.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="../resources/images/t3.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="../resources/images/t4.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="../resources/images/t1.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="../resources/images/t2.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="../resources/images/t3.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="../resources/images/t2.jpg" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="../resources/images/t4.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="template/images/t1.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="template/images/t2.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="template/images/t3.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="template/images/t4.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="template/images/t1.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="template/images/t2.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="template/images/t3.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="template/images/t2.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="template/images/t4.jpg" alt=" " class="img-responsive" /></a></li>
 						</ul>
 					</div>
 					<div class="clearfix"></div>
@@ -445,15 +445,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //footer -->
     <a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	<!-- js -->
-	<script type="text/javascript" src="../resources/js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="template/js/jquery-2.1.4.min.js"></script>
 	<!-- //js -->
 	<!-- /nav -->
-	<script src="../resources/js/modernizr-2.6.2.min.js"></script>
-	<script src="../resources/js/classie.js"></script>
-	<script src="../resources/js/demo1.js"></script>
+	<script src="template/js/modernizr-2.6.2.min.js"></script>
+	<script src="template/js/classie.js"></script>
+	<script src="template/js/demo1.js"></script>
 	<!-- //nav -->
 	<!-- cart-js -->
-	<script src="../resources/js/minicart.js"></script>
+	<script src="template/js/minicart.js"></script>
 	<script>
 		shoe.render();
 
@@ -469,9 +469,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</script>
 	<!-- //cart-js -->
 	<!--search-bar-->
-	<script src="../resources/js/search.js"></script>
+	<script src="template/js/search.js"></script>
 	<!--//search-bar-->
-	<script src="../resources/js/responsiveslides.min.js"></script>
+	<script src="template/js/responsiveslides.min.js"></script>
 	<script>
 		$(function () {
 			$("#slider4").responsiveSlides({
@@ -491,8 +491,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</script>
 	<!-- js for portfolio lightbox -->
 	<!-- start-smoth-scrolling -->
-	<script type="text/javascript" src="../resources/js/move-top.js"></script>
-	<script type="text/javascript" src="../resources/js/easing.js"></script>
+	<script type="text/javascript" src="template/js/move-top.js"></script>
+	<script type="text/javascript" src="template/js/easing.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
@@ -505,7 +505,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</script>
 	<!-- //end-smoth-scrolling -->
 
-	<script type="text/javascript" src="../resources/js/bootstrap-3.1.1.min.js"></script>
+	<script type="text/javascript" src="template/js/bootstrap-3.1.1.min.js"></script>
 
 
 </body>

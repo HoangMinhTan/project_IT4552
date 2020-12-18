@@ -57,6 +57,14 @@
 							Password?
 						</a>
 					</div>
+					<div class="text-center p-t-12">
+						<span class="txt1">
+							Not have account?
+						</span>
+						<a class="txt2" href="">
+							Register
+						</a>
+					</div>
 
 					<div class="text-center p-t-136">
 						<a class="txt2" href="#">
