@@ -11,7 +11,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<title>Single</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="Downy Shoes />
+	<meta name="keywords" content="Downy Shoes"/>
 	<script type="application/x-javascript">
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
@@ -230,15 +230,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="tab1">
 
 							<div class="single_page">
-								<h6>Lorem ipsum dolor sit amet</h6>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elPellentesque vehicula augue eget nisl ullamcorper, molestie
-									blandit ipsum auctor. Mauris volutpat augue dolor.Consectetur adipisicing elit, sed do eiusmod tempor incididunt
-									ut lab ore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. labore et dolore
-									magna aliqua.</p>
-								<p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elPellentesque vehicula augue eget nisl ullamcorper, molestie
-									blandit ipsum auctor. Mauris volutpat augue dolor.Consectetur adipisicing elit, sed do eiusmod tempor incididunt
-									ut lab ore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. labore et dolore
-									magna aliqua.</p>
+								<h6>Page 1</h6>
+								<p>Page 2</p>
+								<p class="para">Page 3</p>
 							</div>
 						</div>
 						<!--//tab_one-->
@@ -255,9 +249,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 												<li><a href="#">Admin</a></li>
 												<li><a href="#"><i class="fa fa-reply-all" aria-hidden="true"></i> Reply</a></li>
 											</ul>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elPellentesque vehicula augue eget.Ut enim ad minima veniam,
-												quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
-												autem vel eum iure reprehenderit.</p>
+											<p>Page 4</p>
 										</div>
 										<div class="clearfix"> </div>
 									</div>
@@ -278,14 +270,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 							<div class="single_page">
 								<h6>Shoe Rock Vision(SRV) Sneakers (Blue)</h6>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elPellentesque vehicula augue eget nisl ullamcorper, molestie
-									blandit ipsum auctor. Mauris volutpat augue dolor.Consectetur adipisicing elit, sed do eiusmod tempor incididunt
-									ut lab ore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. labore et dolore
-									magna aliqua.</p>
-								<p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elPellentesque vehicula augue eget nisl ullamcorper, molestie
-									blandit ipsum auctor. Mauris volutpat augue dolor.Consectetur adipisicing elit, sed do eiusmod tempor incididunt
-									ut lab ore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. labore et dolore
-									magna aliqua.</p>
+								<p>A Sneaker shoes</p>
+								<p class="para">Just Buy It</p>
 							</div>
 						</div>
 					</div>
@@ -616,7 +602,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="footer_inner_info_w3ls_agileits">
 			<div class="col-md-3 footer-left">
 				<h2><a href="index.html"><span>D</span>owny Shoes </a></h2>
-				<p>Lorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+				<p>This is a shoes shop.</p>
 				<ul class="social-nav model-3d-0 footer-social social two">
 					<li>
 						<a href="#" class="facebook">
@@ -676,7 +662,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</div>
 								<div class="address-right">
 									<h6>Email Address</h6>
-									<p>Email :<a href="mailto:example@email.com"> mail@example.com</a></p>
+									<p>Email :<a href="mailto:downyshoes@gmail.com"> downyshoes@gmail.com</a></p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -686,7 +672,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</div>
 								<div class="address-right">
 									<h6>Location</h6>
-									<p>Broome St, NY 10002,California, USA.
+									<p>Dai hoc Bach Khoa Ha Noi.
 
 									</p>
 								</div>
@@ -713,7 +699,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			<div class="clearfix"></div>
 
-			<p class="copy-right-w3ls-agileits">&copy 2018 Downy Shoes. All rights reserved | Design by <a href="http://w3layouts.com/">w3layouts</a></p>
+			<p class="copy-right-w3ls-agileits">&copy 2020 Downy Shoes. All rights reserved | Design by Huy Hieu</p>
 		</div>
 	</div>
 	</div>

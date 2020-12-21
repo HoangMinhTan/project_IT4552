@@ -8,11 +8,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="zxx">
 
 <head>
-	<title>Downy Shoes an Ecommerce Category Bootstrap Responsive Website Template | Check Out :: w3layouts</title>
+	<title>Check Out</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="Downy Shoes Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<meta name="keywords" content="Downy Shoes" />
 	<script type="application/x-javascript">
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
@@ -371,110 +370,110 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<!-- //newsletter-->
 		<!-- footer -->
-		<div class="footer_agileinfo_w3">
-			<div class="footer_inner_info_w3ls_agileits">
-				<div class="col-md-3 footer-left">
-					<h2><a href="index.html"><span>D</span>owny Shoes </a></h2>
-					<p>Lorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
-					<ul class="social-nav model-3d-0 footer-social social two">
-						<li>
-							<a href="#" class="facebook">
-								<div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-								<div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="twitter">
-								<div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-								<div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="instagram">
-								<div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
-								<div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="pinterest">
-								<div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-								<div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-9 footer-right">
-					<div class="sign-grds">
-						<div class="col-md-4 sign-gd">
-							<h4>Our <span>Information</span> </h4>
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="404.html">Services</a></li>
-								<li><a href="404.html">Short Codes</a></li>
-								<li><a href="contact.html">Contact</a></li>
-							</ul>
-						</div>
+	<div class="footer_agileinfo_w3">
+		<div class="footer_inner_info_w3ls_agileits">
+			<div class="col-md-3 footer-left">
+				<h2><a href="index.html"><span>D</span>owny Shoes </a></h2>
+				<p>This is a shoes shop.</p>
+				<ul class="social-nav model-3d-0 footer-social social two">
+					<li>
+						<a href="#" class="facebook">
+							<div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+							<div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="twitter">
+							<div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+							<div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="instagram">
+							<div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+							<div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="pinterest">
+							<div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+							<div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-9 footer-right">
+				<div class="sign-grds">
+					<div class="col-md-4 sign-gd">
+						<h4>Our <span>Information</span> </h4>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="404.html">Services</a></li>
+							<li><a href="404.html">Short Codes</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
 
-						<div class="col-md-5 sign-gd-two">
-							<h4>Store <span>Information</span></h4>
-							<div class="address">
-								<div class="address-grid">
-									<div class="address-left">
-										<i class="fa fa-phone" aria-hidden="true"></i>
-									</div>
-									<div class="address-right">
-										<h6>Phone Number</h6>
-										<p>+1 234 567 8901</p>
-									</div>
-									<div class="clearfix"> </div>
+					<div class="col-md-5 sign-gd-two">
+						<h4>Store <span>Information</span></h4>
+						<div class="address">
+							<div class="address-grid">
+								<div class="address-left">
+									<i class="fa fa-phone" aria-hidden="true"></i>
 								</div>
-								<div class="address-grid">
-									<div class="address-left">
-										<i class="fa fa-envelope" aria-hidden="true"></i>
-									</div>
-									<div class="address-right">
-										<h6>Email Address</h6>
-										<p>Email :<a href="mailto:example@email.com"> mail@example.com</a></p>
-									</div>
-									<div class="clearfix"> </div>
+								<div class="address-right">
+									<h6>Phone Number</h6>
+									<p>+1 234 567 8901</p>
 								</div>
-								<div class="address-grid">
-									<div class="address-left">
-										<i class="fa fa-map-marker" aria-hidden="true"></i>
-									</div>
-									<div class="address-right">
-										<h6>Location</h6>
-										<p>Broome St, NY 10002,California, USA.
+								<div class="clearfix"> </div>
+							</div>
+							<div class="address-grid">
+								<div class="address-left">
+									<i class="fa fa-envelope" aria-hidden="true"></i>
+								</div>
+								<div class="address-right">
+									<h6>Email Address</h6>
+									<p>Email :<a href="mailto:downyshoes@gmail.com"> downyshoes@gmail.com</a></p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="address-grid">
+								<div class="address-left">
+									<i class="fa fa-map-marker" aria-hidden="true"></i>
+								</div>
+								<div class="address-right">
+									<h6>Location</h6>
+									<p>Dai hoc Bach Khoa Ha Noi.
 
-										</p>
-									</div>
-									<div class="clearfix"> </div>
+									</p>
 								</div>
+								<div class="clearfix"> </div>
 							</div>
 						</div>
-						<div class="col-md-3 sign-gd flickr-post">
-							<h4>Flickr <span>Posts</span></h4>
-							<ul>
-								<li><a href="single.html"><img src="../resources/images/t1.jpg" alt=" " class="img-responsive" /></a></li>
-								<li><a href="single.html"><img src="../resources/images/t2.jpg" alt=" " class="img-responsive" /></a></li>
-								<li><a href="single.html"><img src="../resources/images/t3.jpg" alt=" " class="img-responsive" /></a></li>
-								<li><a href="single.html"><img src="../resources/images/t4.jpg" alt=" " class="img-responsive" /></a></li>
-								<li><a href="single.html"><img src="../resources/images/t1.jpg" alt=" " class="img-responsive" /></a></li>
-								<li><a href="single.html"><img src="../resources/images/t2.jpg" alt=" " class="img-responsive" /></a></li>
-								<li><a href="single.html"><img src="../resources/images/t3.jpg" alt=" " class="img-responsive" /></a></li>
-								<li><a href="single.html"><img src="../resources/images/t2.jpg" alt=" " class="img-responsive" /></a></li>
-								<li><a href="single.html"><img src="../resources/images/t4.jpg" alt=" " class="img-responsive" /></a></li>
-							</ul>
-						</div>
-						<div class="clearfix"></div>
 					</div>
+					<div class="col-md-3 sign-gd flickr-post">
+						<h4>Flickr <span>Posts</span></h4>
+						<ul>
+							<li><a href="single.html"><img src="../resources/images/t1.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="../resources/images/t2.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="../resources/images/t3.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="../resources/images/t4.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="../resources/images/t1.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="../resources/images/t2.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="../resources/images/t3.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="../resources/images/t2.jpg" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="../resources/images/t4.jpg" alt=" " class="img-responsive" /></a></li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
 				</div>
-				<div class="clearfix"></div>
-
-				<p class="copy-right-w3ls-agileits">&copy 2018 Downy Shoes. All rights reserved | Design by <a href="http://w3layouts.com/">w3layouts</a></p>
 			</div>
+			<div class="clearfix"></div>
+
+			<p class="copy-right-w3ls-agileits">&copy 2020 Downy Shoes. All rights reserved | Design by Huy Hieu</p>
 		</div>
+	</div>
 	</div>
 	<!-- //footer -->
     <a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
