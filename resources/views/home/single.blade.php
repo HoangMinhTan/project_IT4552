@@ -1,9 +1,3 @@
-<!--
-author: W3layouts
-author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -11,7 +5,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<title>Single</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="Downy Shoes"/>
+	<meta name="keywords" content="Downy Shop"/>
 	<script type="application/x-javascript">
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
@@ -601,8 +595,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="footer_agileinfo_w3">
 		<div class="footer_inner_info_w3ls_agileits">
 			<div class="col-md-3 footer-left">
-				<h2><a href="index.html"><span>D</span>owny Shoes </a></h2>
-				<p>This is a shoes shop.</p>
+				<h2><a href="index.html"><span>D</span>owny Shop </a></h2>
+				<p>This is a shop.</p>
 				<ul class="social-nav model-3d-0 footer-social social two">
 					<li>
 						<a href="#" class="facebook">
@@ -662,7 +656,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</div>
 								<div class="address-right">
 									<h6>Email Address</h6>
-									<p>Email :<a href="mailto:downyshoes@gmail.com"> downyshoes@gmail.com</a></p>
+									<p>Email :<a href="mailto:downyshop@gmail.com"> downyshop@gmail.com</a></p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -699,7 +693,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 			<div class="clearfix"></div>
 
-			<p class="copy-right-w3ls-agileits">&copy 2020 Downy Shoes. All rights reserved | Design by Huy Hieu</p>
+			<p class="copy-right-w3ls-agileits">&copy 2020 Downy Shop. All rights reserved | Design by Huy Hieu</p>
 		</div>
 	</div>
 	</div>

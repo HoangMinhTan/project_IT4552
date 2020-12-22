@@ -3,11 +3,11 @@
 <html lang="zxx">
 
 <head>
-	<title>Downy Shoes</title>
+	<title>Downy Shop</title>
 	<!-- custom-theme -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="Downy Shoes" />
+	<meta name="keywords" content="Downy Shop" />
 	<script type="application/x-javascript">
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
@@ -37,7 +37,7 @@
 
 			<div class="header_agileits">
 				<div class="logo">
-					<h1><a class="navbar-brand" href="index.html"><span>Downy</span> <i>Shoes</i></a></h1>
+					<h1><a class="navbar-brand" href="index.html"><span>Downy</span> <i>Shop</i></a></h1>
 				</div>
 				<div class="overlay overlay-contentpush">
 					<button type="button" class="overlay-close"><i class="fa fa-times" aria-hidden="true"></i></button>
@@ -93,7 +93,7 @@
 						<li>
 							<div class="banner-top2">
 								<div class="banner-info-wthree">
-									<h3>Nike</h3>
+									<h3>T-shirt</h3>
 									<p>See how good they feel.</p>
 
 								</div>
@@ -103,7 +103,7 @@
 						<li>
 							<div class="banner-top3">
 								<div class="banner-info-wthree">
-									<h3>Heels</h3>
+									<h3>Hoodie</h3>
 									<p>For All Walks of Life.</p>
 
 								</div>
@@ -113,7 +113,7 @@
 						<li>
 							<div class="banner-top">
 								<div class="banner-info-wthree">
-									<h3>Sneakers</h3>
+									<h3>Vest</h3>
 									<p>See how good they feel.</p>
 
 								</div>
@@ -123,7 +123,7 @@
 						<li>
 							<div class="banner-top1">
 								<div class="banner-info-wthree">
-									<h3>Adidas</h3>
+									<h3>Jeans</h3>
 									<p>For All Walks of Life.</p>
 
 								</div>
@@ -176,8 +176,8 @@
 			<div class="col-md-6 grids_sec_2_left">
 				<div class="grid_sec_info">
 					<div class="style-grid-2-text_info">
-						<h3>Sneakers</h3>
-						<p>Sneaker Shoes.</p>
+						<h3>T-shirt</h3>
+						<p>Colorful T-shirt</p>
 						<div class="shop-button">
 							<a href="shop.html">Shop Now</a>
 						</div>
@@ -200,8 +200,8 @@
 				</div>
 				<div class="grid_sec_info last">
 					<div class="style-grid-2-text_info">
-						<h3>Sneakers</h3>
-						<p>Sneakers Shoes .</p>
+						<h3>T-shirt</h3>
+						<p>Colorful T-shirt .</p>
 						<div class="shop-button two">
 							<a href="shop.html">Shop Now</a>
 						</div>
@@ -215,7 +215,7 @@
 	<!-- /Properties -->
 	<div class="mid_slider_w3lsagile">
 		<div class="col-md-3 mid_slider_text">
-			<h5>Some More Shoes</h5>
+			<h5>Some More</h5>
 		</div>
 		<div class="col-md-9 mid_slider_info">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -328,7 +328,7 @@
 	<div class="footer_agileinfo_w3">
 		<div class="footer_inner_info_w3ls_agileits">
 			<div class="col-md-3 footer-left">
-				<h2><a href="index.html"><span>D</span>owny Shoes </a></h2>
+				<h2><a href="index.html"><span>D</span>owny Shop </a></h2>
 				<p>This is a shoes shop.</p>
 				<ul class="social-nav model-3d-0 footer-social social two">
 					<li>
@@ -389,7 +389,7 @@
 								</div>
 								<div class="address-right">
 									<h6>Email Address</h6>
-									<p>Email :<a href="mailto:downyshoes@gmail.com"> downyshoes@gmail.com</a></p>
+									<p>Email :<a href="mailto:downyshop@gmail.com"> downyshop@gmail.com</a></p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -426,7 +426,7 @@
 			</div>
 			<div class="clearfix"></div>
 
-			<p class="copy-right-w3ls-agileits">&copy 2020 Downy Shoes. All rights reserved | Design by Huy Hieu</p>
+			<p class="copy-right-w3ls-agileits">&copy 2020 Downy Shop. All rights reserved | Design by Huy Hieu</p>
 		</div>
 	</div>
 	</div>
