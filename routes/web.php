@@ -59,6 +59,11 @@ Route::group(['middleware' => 'admin'], function()
         Route::get('delete/{id}','App\Http\Controllers\supplierController@delete');
     });
 
+    Route::group(['prefix' => 'bill'], function(){
+        Route::get('/', 'App\Http\Controllers\billController@bill')->name('bill');
+        Route::get('/detail/{id}', 'App\Http\Controllers\billController@detail')->name('detail');
+    });
+
     Route::group(['prefix' => 'profile'], function(){
         Route::get('/', 'App\Http\Controllers\AdminController@profile')->name('profile');
         Route::post('update_infor', 'App\Http\Controllers\AdminController@update_infor')->name('update_infor');

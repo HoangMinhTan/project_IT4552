@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Category;
 use App\Models\Supplier;
+use App\Models\Detail_bill;
 
 class Product extends Model
 {
@@ -20,5 +21,10 @@ class Product extends Model
     public function supplier()
     {
         return $this->belongsTo(Supplier::class);
+    }
+
+    public function detail()
+    {
+        return $this->belongsTo(Detail_bill::class);
     }
 }

@@ -70,5 +70,56 @@ class DatabaseSeeder extends Seeder
             'out_price'=>13000,
             'note'=> ''
         ]);
+        \DB::table('product')->insert([
+            'name'=> "aldfsdfdsfsdf",
+            'quantity' => 2,
+            'category_id'=> 1,
+            'supplier_id' => 2,
+            'in_price' => 12000,
+            'out_price'=>13000,
+            'note'=> ''
+        ]);
+
+        \DB::table('bill')->insert([
+            'user_id'=> 2,
+            'total' => 1000000,
+            'created_at' => Carbon::now()
+        ]);
+
+        \DB::table('detail_bill')->insert([
+            'bill_id'=> 1,
+            'product_id' => 1,
+            'quantity' => 5,
+            'price' => 10000,
+            'total' => 50000
+        ]);
+        \DB::table('detail_bill')->insert([
+            'bill_id'=> 1,
+            'product_id' => 2,
+            'quantity' => 7,
+            'price' => 1000,
+            'total' => 5000
+        ]);
+
+        \DB::table('bill')->insert([
+            'user_id'=> 2,
+            'total' => 1000000,
+            'created_at' => Carbon::now()
+        ]);
+
+        \DB::table('detail_bill')->insert([
+            'bill_id'=> 2,
+            'product_id' => 1,
+            'quantity' => 5,
+            'price' => 10000,
+            'total' => 50000
+        ]);
+        \DB::table('detail_bill')->insert([
+            'bill_id'=> 2,
+            'product_id' => 2,
+            'quantity' => 3,
+            'price' => 100000,
+            'total' => 500000
+        ]);
     }
 }
