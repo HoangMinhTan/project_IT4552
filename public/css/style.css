@@ -140,7 +140,7 @@ ul.top_icons li a:hover {
 .mobile-nav-button {
     position: fixed;
     margin: 47px 0 0 0;
-    right: 8%;
+    right: 7%;
     top: 0;
     z-index: 9999;
     cursor: pointer;

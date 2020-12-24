@@ -3,8 +3,7 @@
 <html lang="zxx">
 
 <head>
-	<title>Downy Shop</title>
-	<!-- custom-theme -->
+	<title>Paymennt</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="Downy Shop" />
@@ -21,6 +20,10 @@
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<link rel="stylesheet" href="css/shop.css" type="text/css" media="screen" property="" />
 	<link href="css/style7.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- Owl-carousel-CSS -->
+	<link href="css/easy-responsive-tabs.css" rel='stylesheet' type='text/css' />
+
+	<link rel="stylesheet" type="text/css" href="css/checkout.css">
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- font-awesome-icons -->
 	<link href="css/font-awesome.css" rel="stylesheet">
@@ -32,23 +35,22 @@
 
 <body>
 	<!-- banner -->
-	<div class="banner_top" id="home">
+<div class="banner_top innerpage" id="home">
 		<div class="wrapper_top_w3layouts">
-
 			<div class="header_agileits">
-				<div class="logo">
-					<h1><a class="navbar-brand" href="{{route('home')}}"><span>Downy</span> <i>Shop</i></a></h1>
+				<div class="logo inner_page_log">
+					<h1><a class="navbar-brand" href="index.html"><span>Downy</span> <i>Shoes</i></a></h1>
 				</div>
 				<div class="overlay overlay-contentpush">
 					<button type="button" class="overlay-close"><i class="fa fa-times" aria-hidden="true"></i></button>
 
 					<nav>
 						<ul>
-							<li><a href="{{route('home')}}" class="active">Home</a></li>
-							<li><a href="{{route('about')}}">About</a></li>
-							<li><a href="{{route('shop')}}">Shop Now</a></li>
-                            <li><a href="{{route('contact')}}">Contact</a></li>
-                            <li><a href="{{'login'}}">Login</a></li>
+							<li><a href="index.html" class="active">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="404.html">Team</a></li>
+							<li><a href="shop.html">Shop Now</a></li>
+							<li><a href="contact.html">Contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -64,169 +66,209 @@
 							<button class="top_shoe_cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
 						</form>
 					</div>
-
 				</div>
-				<!-- //cart details -->
-				<!-- search -->
-				<div class="search_w3ls_agileinfo">
-					<div class="cd-main-header">
-						<ul class="cd-header-buttons">
-							<li><a class="cd-search-trigger" href="#cd-search"> <span></span></a></li>
-						</ul>
-					</div>
-					<div id="cd-search" class="cd-search">
-						<form action="#" method="post">
-							<input name="Search" type="search" placeholder="Click enter after typing...">
-						</form>
-					</div>
-				</div>
-				<!-- //search -->
-
-				<div class="clearfix"></div>
 			</div>
-			<!-- /slider -->
-			<div class="slider">
-				<div class="callbacks_container">
-					<ul class="rslides callbacks callbacks1" id="slider4">
-
-						<li>
-							<div class="banner-top2">
-								<div class="banner-info-wthree">
-									<h3>T-shirt</h3>
-									<p>See how good they feel.</p>
-
-								</div>
-
-							</div>
-						</li>
-						<li>
-							<div class="banner-top3">
-								<div class="banner-info-wthree">
-									<h3>Hoodie</h3>
-									<p>For All Walks of Life.</p>
-
-								</div>
-
-							</div>
-						</li>
-						<li>
-							<div class="banner-top">
-								<div class="banner-info-wthree">
-									<h3>Vest</h3>
-									<p>See how good they feel.</p>
-
-								</div>
-
-							</div>
-						</li>
-						<li>
-							<div class="banner-top1">
-								<div class="banner-info-wthree">
-									<h3>Jeans</h3>
-									<p>For All Walks of Life.</p>
-
-								</div>
-
-							</div>
-						</li>
-					</ul>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<!-- //slider -->
-			<ul class="top_icons">
-				<li><a href="#"><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
-				<li><a href="#"><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
-			</ul>
 		</div>
+		<!-- //cart details -->
+		<!-- search -->
+		<div class="search_w3ls_agileinfo">
+			<div class="cd-main-header">
+				<ul class="cd-header-buttons">
+					<li><a class="cd-search-trigger" href="#cd-search"> <span></span></a></li>
+				</ul>
+			</div>
+			<div id="cd-search" class="cd-search">
+				<form action="#" method="post">
+					<input name="Search" type="search" placeholder="Click enter after typing...">
+				</form>
+			</div>
+		</div>
+		<!-- //search -->
+		<div class="clearfix"></div>
+		<!-- /banner_inner -->
+		<div class="services-breadcrumb_w3ls_agileinfo">
+			<div class="inner_breadcrumb_agileits_w3">
+
+				<ul class="short">
+					<li><a href="index.html">Home</a><i>|</i></li>
+					<li>Payment</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //banner_inner -->
 	</div>
+
 	<!-- //banner -->
-	<!-- /girds_bottom-->
-	<div class="grids_bottom">
-		<div class="style-grids">
-			<div class="col-md-6 style-grid style-grid-1">
-				<img src="images/b1.jpg" alt="shoe">
-			</div>
-		</div>
-		<div class="col-md-6 style-grid style-grid-2">
-			<div class="style-image-1_info">
-				<div class="style-grid-2-text_info">
-					<h3>Nike DOWNSHIFTER</h3>
-					<p>Nike Shoes .</p>
-					<div class="shop-button">
-						<a href="{{route('shop')}}">Shop Now</a>
+	<!-- top Products -->
+	<div class="ads-grid_shop">
+		<div class="shop_inner_inf">
+			<div class="privacy about">
+				<h3>Pay<span>ment</span></h3>
+				<!--/tabs-->
+				<div class="responsive_tabs">
+					<div id="horizontalTab">
+						<ul class="resp-tabs-list">
+							<li>Cash on delivery (COD)</li>
+							<li>Credit/Debit</li>
+							<li>Net Banking</li>
+							<li>Paypal Account</li>
+						</ul>
+						<div class="resp-tabs-container">
+							<!--/tab_one-->
+							<div class="tab1">
+								<div class="pay_info">
+									<div class="vertical_post check_box_agile">
+										<h5>COD</h5>
+										<div class="checkbox">
+											<div class="check_box_one cashon_delivery">
+												<label class="anim">
+																<input type="checkbox" class="checkbox">
+																 <span> We also accept Credit/Debit card on delivery. Please Check with the agent.</span> 
+															</label>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<!--//tab_one-->
+							<div class="tab2">
+								<div class="pay_info">
+									<form action="#" method="post" class="creditly-card-form agileinfo_form">
+										<section class="creditly-wrapper wthree, w3_agileits_wrapper">
+											<div class="credit-card-wrapper">
+												<div class="first-row form-group">
+													<div class="controls">
+														<label class="control-label">Name on Card</label>
+														<input class="billing-address-name form-control" type="text" name="name" placeholder="John Smith">
+													</div>
+													<div class="w3_agileits_card_number_grids">
+														<div class="w3_agileits_card_number_grid_left">
+															<div class="controls">
+																<label class="control-label">Card Number</label>
+																<input class="number credit-card-number form-control" type="text" name="number" inputmode="numeric" autocomplete="cc-number"
+																    autocompletetype="cc-number" x-autocompletetype="cc-number" placeholder="&#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149;">
+															</div>
+														</div>
+														<div class="w3_agileits_card_number_grid_right">
+															<div class="controls">
+																<label class="control-label">CVV</label>
+																<input class="security-code form-control" Â· inputmode="numeric" type="text" name="security-code" placeholder="&#149;&#149;&#149;">
+															</div>
+														</div>
+														<div class="clear"> </div>
+													</div>
+													<div class="controls">
+														<label class="control-label">Expiration Date</label>
+														<input class="expiration-month-and-year form-control" type="text" name="expiration-month-and-year" placeholder="MM / YY">
+													</div>
+												</div>
+												<button class="submit"><span>Make a payment </span></button>
+											</div>
+										</section>
+									</form>
+
+								</div>
+							</div>
+							<div class="tab3">
+
+								<div class="pay_info">
+									<div class="vertical_post">
+										<form action="#" method="post">
+											<h5>Select From Popular Banks</h5>
+											<div class="swit-radio">
+												<div class="check_box_one">
+													<div class="radio_one"> <label><input type="radio" name="radio" checked=""><i></i>Vietin Bank</label> </div>
+												</div>
+												<div class="check_box_one">
+													<div class="radio_one"> <label><input type="radio" name="radio"><i></i>BIDV</label> </div>
+												</div>
+												<div class="check_box_one">
+													<div class="radio_one"> <label><input type="radio" name="radio"><i></i>Vietcom Bank</label> </div>
+												</div>
+												<div class="check_box_one">
+													<div class="radio_one"> <label><input type="radio" name="radio"><i></i>MBBank</label> </div>
+												</div>
+												<div class="check_box_one">
+													<div class="radio_one"> <label><input type="radio" name="radio"><i></i>Sacombank</label> </div>
+												</div>
+												<div class="clearfix"></div>
+											</div>
+											<h5>Or SELECT OTHER BANK</h5>
+											<div class="section_room_pay">
+												<select class="year"><option value="">=== Other Banks ===</option><option value="ALB-NA">TechcomBank</option><option value="ADB-NA">EximBank</option><option value="BBK-NA">NCB</option><option value="BBC-NA">MSB</option><option value="BBR-NA">VPBank</option><option value="BOI-NA">GPBank</option><option value="BOM-NA">OCEANBANK</option><option value="CSB-NA">ABBank</option><option value="CBI-NA">VID Bank</option><option value="CUB-NA">Nam A Bank</option><option value="CRP-NA">PVCom Bank</option><option value="DBK-NA">PGBank</option><option value="DCB-NA">SaiGonBank</option><option value="DC2-NA">SeaBank</option><option value="DLB-NA">VIB Bank</option><option value="FBK-NA">HD Bank</option><option value="IDS-NA">SHB Bank</option><option value="IOB-NA">LienVietBank</option><option value="ING-NA">TPBank</option><option value="JKB-NA">SCB</option><option value="JSB-NA">CIMBank</option><option value="KBL-NA">Indovina</option><option value="KVB-NA">Woori Bank</option><option value="LVR-NA">HSBC</option><option value="OBC-NA">Ban Viet Bank</option><option value="CPN-NA">VietBank</option><option value="PNB-NA">Dong A Bank</option><option value="RSD-DIRECT">ShinhanBank</option><option value="RBS-NA">OCB</option><option value="SWB-NA">Hong Leong Bank</option></select>
+											</div>
+											<input type="submit" value="PAY NOW">
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="tab4">
+								<div class="pay_info">
+									<div class="col-md-6 tab-grid">
+										<img class="pp-img" src="images/paypal.png" alt="Image Alternative text" title="Image Title">
+										<p>Important: You will be redirected to PayPal's website to securely complete your payment.</p><a class="btn btn-primary">Checkout via Paypal</a>
+									</div>
+									<div class="col-md-6">
+										<form class="cc-form">
+											<div class="clearfix">
+												<div class="form-group form-group-cc-number">
+													<label>Card Number</label>
+													<input class="form-control" placeholder="xxxx xxxx xxxx xxxx" type="text"><span class="cc-card-icon"></span>
+												</div>
+												<div class="form-group form-group-cc-cvc">
+													<label>CVV</label>
+													<input class="form-control" placeholder="xxxx" type="text">
+												</div>
+											</div>
+											<div class="clearfix">
+												<div class="form-group form-group-cc-name">
+													<label>Card Holder Name</label>
+													<input class="form-control" type="text">
+												</div>
+												<div class="form-group form-group-cc-date">
+													<label>Valid Thru</label>
+													<input class="form-control" placeholder="mm/yy" type="text">
+												</div>
+											</div>
+											<div class="checkbox checkbox-small">
+												<label>
+                                        <input class="i-check" type="checkbox" checked="">Add to My Cards</label>
+											</div>
+											<input class="btn btn-primary submit" type="submit" value="Proceed Payment">
+										</form>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
+				<!--//tabs-->
 			</div>
-			<div class="style-image-2">
-				<img src="images/b2.jpg" alt="shoe">
-				<div class="style-grid-2-text">
-					<h3>Air force</h3>
-				</div>
-			</div>
+
 		</div>
+		<!-- //payment -->
+
 		<div class="clearfix"></div>
 	</div>
-	</div>
-	<!-- //grids_bottom-->
-	<!-- /girds_bottom2-->
-	<div class="grids_sec_2">
-		<div class="style-grids_main">
-			<div class="col-md-6 grids_sec_2_left">
-				<div class="grid_sec_info">
-					<div class="style-grid-2-text_info">
-						<h3>T-shirt</h3>
-						<p>Colorful T-shirt</p>
-						<div class="shop-button">
-							<a href="{{route('shop')}}">Shop Now</a>
-						</div>
-					</div>
-				</div>
-				<div class="style-image-2">
-					<img src="images/b4.jpg" alt="shoe">
-					<div class="style-grid-2-text">
-						<h3>Air force</h3>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 grids_sec_2_left">
-
-				<div class="style-image-2">
-					<img src="images/b3.jpg" alt="shoe">
-					<div class="style-grid-2-text">
-						<h3>Air force</h3>
-					</div>
-				</div>
-				<div class="grid_sec_info last">
-					<div class="style-grid-2-text_info">
-						<h3>T-shirt</h3>
-						<p>Colorful T-shirt .</p>
-						<div class="shop-button two">
-							<a href="{{route('shop')}}">Shop Now</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-	<!-- //grids_bottom2-->
-	<!-- /Properties -->
+	<!-- //top products -->
 	<div class="mid_slider_w3lsagile">
 		<div class="col-md-3 mid_slider_text">
-			<h5>Some More</h5>
+			<h5>Some More Shoes</h5>
 		</div>
 		<div class="col-md-9 mid_slider_info">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
-					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+					<li data-target="#myCarousel" data-slide-to="0" class=""></li>
+					<li data-target="#myCarousel" data-slide-to="1" class="active"></li>
 					<li data-target="#myCarousel" data-slide-to="2" class=""></li>
 					<li data-target="#myCarousel" data-slide-to="3" class=""></li>
 				</ol>
 				<div class="carousel-inner" role="listbox">
-					<div class="item active">
+					<div class="item">
 						<div class="row">
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
 								<div class="thumbnail"><img src="images/g1.jpg" alt="Image" style="max-width:100%;"></div>
@@ -242,7 +284,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="item">
+					<div class="item active">
 						<div class="row">
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
 								<div class="thumbnail"><img src="images/g5.jpg" alt="Image" style="max-width:100%;"></div>
@@ -306,8 +348,6 @@
 
 		<div class="clearfix"> </div>
 	</div>
-	<!--//banner -->
-
 	<!-- /newsletter-->
 	<div class="newsletter_w3layouts_agile">
 		<div class="col-sm-6 newsleft">
@@ -327,8 +367,8 @@
 	<div class="footer_agileinfo_w3">
 		<div class="footer_inner_info_w3ls_agileits">
 			<div class="col-md-3 footer-left">
-				<h2><a href="{{route('home')}}"><span>D</span>owny Shop </a></h2>
-				<p>This is a shoes shop.</p>
+				<h2><a href="index.html"><span>D</span>owny Shoes </a></h2>
+				<p>This is a shop.</p>
 				<ul class="social-nav model-3d-0 footer-social social two">
 					<li>
 						<a href="#" class="facebook">
@@ -361,11 +401,11 @@
 					<div class="col-md-4 sign-gd">
 						<h4>Our <span>Information</span> </h4>
 						<ul>
-							<li><a href="{{route('home')}}">Home</a></li>
-							<li><a href="{{route('about')}}">About</a></li>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
 							<li><a href="404.html">Services</a></li>
 							<li><a href="404.html">Short Codes</a></li>
-							<li><a href="{{route('contact')}}">Contact</a></li>
+							<li><a href="contact.html">Contact</a></li>
 						</ul>
 					</div>
 
@@ -430,15 +470,10 @@
 	</div>
 	</div>
 	<!-- //footer -->
-    <a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+   <a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	<!-- js -->
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<!-- //js -->
-	<!-- /nav -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<script src="js/classie.js"></script>
-	<script src="js/demo1.js"></script>
-	<!-- //nav -->
 	<!-- cart-js -->
 	<script src="js/minicart.js"></script>
 	<script>
@@ -455,28 +490,64 @@
 		});
 	</script>
 	<!-- //cart-js -->
+	<!-- /nav -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/demo1.js"></script>
+	<!-- //nav -->
 	<!--search-bar-->
 	<script src="js/search.js"></script>
 	<!--//search-bar-->
-	<script src="js/responsiveslides.min.js"></script>
+	<!-- easy-responsive-tabs -->
+	<script src="js/easy-responsive-tabs.js"></script>
 	<script>
+		$(document).ready(function () {
+			$('#horizontalTab').easyResponsiveTabs({
+				type: 'default', //Types: default, vertical, accordion           
+				width: 'auto', //auto or any width like 600px
+				fit: true, // 100% fit in a container
+				closed: 'accordion', // Start closed if in accordion view
+				activate: function (event) { // Callback function if tab is switched
+					var $tab = $(this);
+					var $info = $('#tabInfo');
+					var $name = $('span', $info);
+					$name.text($tab.text());
+					$info.show();
+				}
+			});
+			$('#verticalTab').easyResponsiveTabs({
+				type: 'vertical',
+				width: 'auto',
+				fit: true
+			});
+		});
+	</script>
+
+	<!-- credit-card -->
+	<script type="text/javascript" src="js/creditly.js"></script>
+	<link rel="stylesheet" href="css/creditly.css" type="text/css" media="all" />
+
+	<script type="text/javascript">
 		$(function () {
-			$("#slider4").responsiveSlides({
-				auto: true,
-				pager: true,
-				nav: true,
-				speed: 1000,
-				namespace: "callbacks",
-				before: function () {
-					$('.events').append("<li>before event fired.</li>");
-				},
-				after: function () {
-					$('.events').append("<li>after event fired.</li>");
+			var creditly = Creditly.initialize(
+				'.creditly-wrapper .expiration-month-and-year',
+				'.creditly-wrapper .credit-card-number',
+				'.creditly-wrapper .security-code',
+				'.creditly-wrapper .card-type');
+
+			$(".creditly-card-form .submit").click(function (e) {
+				e.preventDefault();
+				var output = creditly.validate();
+				if (output) {
+					// Your validated credit card output
+					console.log(output);
 				}
 			});
 		});
 	</script>
-	<!-- js for portfolio lightbox -->
+	<!-- //credit-card -->
+
+
 	<!-- start-smoth-scrolling -->
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
@@ -491,7 +562,6 @@
 		});
 	</script>
 	<!-- //end-smoth-scrolling -->
-
 	<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
 
 

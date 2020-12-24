@@ -1,8 +1,16 @@
 
+
 @extends('home.master')
 
+@section('service')
+	<ul class="short">
+		<li><a href="{{route('home')}}">Home</a><i>|</i></li>
+		<li>Shop</li>
+	</ul>
+@endsection
 
 @section('content')
+
 	<!-- top Products -->
 	<div class="ads-grid_shop">
 		<div class="shop_inner_inf">
@@ -146,7 +154,7 @@
 					<h3 class="agileits-sear-head">Special Deals</h3>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="../resources/template/images/s4.jpg" alt="">
+							<img src="images/s4.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
 							<h3>Shuberry Heels</h3>
@@ -156,7 +164,7 @@
 					</div>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="../resources/template/images/s2.jpg" alt="">
+							<img src="images/s2.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
 							<h3>Chikku Loafers</h3>
@@ -166,7 +174,7 @@
 					</div>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="../resources/template/images/s1.jpg" alt="">
+							<img src="images/s1.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
 							<h3>Bella Toes</h3>
@@ -176,7 +184,7 @@
 					</div>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="../resources/template/images/s5.jpg" alt="">
+							<img src="images/s5.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
 							<h3>Red Bellies</h3>
@@ -186,7 +194,7 @@
 					</div>
 					<div class="special-sec1">
 						<div class="col-xs-4 img-deals">
-							<img src="../resources/template/images/s3.jpg" alt="">
+							<img src="images/s3.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
 							<h3>(SRV) Sneakers</h3>
@@ -203,11 +211,11 @@
 			<div class="left-ads-display col-md-9">
 				<div class="wrapper_top_shop">
 					<div class="col-md-6 shop_left">
-						<img src="../resources/template/images/banner3.jpg" alt="">
+						<img src="images/banner3.jpg" alt="">
 						<h6>40% off</h6>
 					</div>
 					<div class="col-md-6 shop_right">
-						<img src="../resources/template/images/banner2.jpg" alt="">
+						<img src="images/banner2.jpg" alt="">
 						<h6>50% off</h6>
 					</div>
 					<div class="clearfix"></div>
@@ -218,7 +226,7 @@
 							<div class="product-shoe-info shoe">
 								<div class="men-pro-item">
 									<div class="men-thumb-item">
-										<img src="../resources/template/images/s1.jpg" alt="">
+										<img src="images/s1.jpg" alt="">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
 												<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -267,7 +275,7 @@
 							<div class="product-shoe-info shoe">
 								<div class="men-pro-item">
 									<div class="men-thumb-item">
-										<img src="../resources/template/images/s2.jpg" alt="">
+										<img src="images/s2.jpg" alt="">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
 												<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -316,7 +324,7 @@
 							<div class="product-shoe-info shoe">
 								<div class="men-pro-item">
 									<div class="men-thumb-item">
-										<img src="../resources/template/images/s3.jpg" alt="">
+										<img src="images/s3.jpg" alt="">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
 												<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -367,7 +375,7 @@
 							<div class="product-shoe-info shoe">
 								<div class="men-pro-item">
 									<div class="men-thumb-item">
-										<img src="../resources/template/images/s4.jpg" alt="">
+										<img src="images/s4.jpg" alt="">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
 												<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -416,7 +424,7 @@
 							<div class="product-shoe-info shoe">
 								<div class="men-pro-item">
 									<div class="men-thumb-item">
-										<img src="../resources/template/images/s5.jpg" alt="">
+										<img src="images/s5.jpg" alt="">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
 												<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -465,7 +473,7 @@
 							<div class="product-shoe-info shoe">
 								<div class="men-pro-item">
 									<div class="men-thumb-item">
-										<img src="../resources/template/images/s6.jpg" alt="">
+										<img src="images/s6.jpg" alt="">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
 												<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -516,7 +524,7 @@
 							<div class="product-shoe-info shoe">
 								<div class="men-pro-item">
 									<div class="men-thumb-item">
-										<img src="../resources/template/images/s7.jpg" alt="">
+										<img src="images/s7.jpg" alt="">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
 												<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -565,7 +573,7 @@
 							<div class="product-shoe-info shoe">
 								<div class="men-pro-item">
 									<div class="men-thumb-item">
-										<img src="../resources/template/images/s8.jpg" alt="">
+										<img src="images/s8.jpg" alt="">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
 												<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -614,7 +622,7 @@
 							<div class="product-shoe-info shoe">
 								<div class="men-pro-item">
 									<div class="men-thumb-item">
-										<img src="../resources/template/images/s9.jpg" alt="">
+										<img src="images/s9.jpg" alt="">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
 												<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -666,11 +674,11 @@
 
 					<!-- //product-sec1 -->
 					<div class="col-md-6 shop_left shp">
-						<img src="../resources/template/images/banner4.jpg" alt="">
+						<img src="images/banner4.jpg" alt="">
 						<h6>21% off</h6>
 					</div>
 					<div class="col-md-6 shop_right shp">
-						<img src="../resources/template/images/banner1.jpg" alt="">
+						<img src="images/banner1.jpg" alt="">
 						<h6>31% off</h6>
 					</div>
 					<div class="clearfix"></div>
@@ -697,64 +705,64 @@
 					<div class="item">
 						<div class="row">
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/template/images/g1.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="images/g1.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/template/images/g2.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="images/g2.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/template/images/g3.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="images/g3.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/template/images/g4.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="images/g4.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 						</div>
 					</div>
 					<div class="item active">
 						<div class="row">
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/template/images/g5.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="images/g5.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/template/images/g6.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="images/g6.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/template/images/g2.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="images/g2.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/template/images/g1.jpg" alt="Image" style="max-width:100%;"></div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="row">
-							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/template/images/g1.jpg" alt="Image" style="max-width:100%;"></div>
-							</div>
-							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/template/images/g2.jpg" alt="Image" style="max-width:100%;"></div>
-							</div>
-							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/template/images/g3.jpg" alt="Image" style="max-width:100%;"></div>
-							</div>
-							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/template/images/g4.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="images/g1.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 						</div>
 					</div>
 					<div class="item">
 						<div class="row">
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/template/images/g1.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="images/g1.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/template/images/g2.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="images/g2.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/template/images/g3.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="images/g3.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="../resources/template/images/g4.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="images/g4.jpg" alt="Image" style="max-width:100%;"></div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="row">
+							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+								<div class="thumbnail"><img src="images/g1.jpg" alt="Image" style="max-width:100%;"></div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+								<div class="thumbnail"><img src="images/g2.jpg" alt="Image" style="max-width:100%;"></div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+								<div class="thumbnail"><img src="images/g3.jpg" alt="Image" style="max-width:100%;"></div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+								<div class="thumbnail"><img src="images/g4.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 						</div>
 					</div>
@@ -774,20 +782,6 @@
 
 		<div class="clearfix"> </div>
 	</div>
-	<!-- /newsletter-->
-	<div class="newsletter_w3layouts_agile">
-		<div class="col-sm-6 newsleft">
-			<h3>Sign up for Newsletter !</h3>
-		</div>
-		<div class="col-sm-6 newsright">
-			<form action="#" method="post">
-				<input type="email" placeholder="Enter your email..." name="email" required="">
-				<input type="submit" value="Submit">
-			</form>
-		</div>
-
-		<div class="clearfix"></div>
-	</div>
-	<!-- //newsletter-->
+	
 
 	@endsection

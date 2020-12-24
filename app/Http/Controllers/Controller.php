@@ -18,4 +18,24 @@ class Controller extends BaseController
     public function shop(){
         return view('home.shop');
     }
+
+    public function about(){
+        return view('home.about');
+    }
+
+    public function contact(){
+        return view('home.contact');
+    }
+
+    public function single(){
+        return view('home.single');
+    }
+
+    public function checkout(){
+        return view('home.checkout');
+    }
+
+    public function payment(){
+        return view('home.payment');
+    }
 }

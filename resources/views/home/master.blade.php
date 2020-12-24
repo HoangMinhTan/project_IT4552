@@ -3,13 +3,13 @@
 <html lang="zxx">
 
 <head>
-	<title>Downy Shoes an Ecommerce Category Bootstrap Responsive Website Template | Shop :: w3layouts</title>
+	<title>Downy Shoes an Ecommerce Category Bootstrap Responsive Website | Shop :: w3layouts</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="Downy Shoes Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<meta name="keywords" content="Downy Shoes Responsive web  Bootstrap Web , Flat Web , Android Compatible web  
+Smartphone Compatible web  free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 	<script type="application/x-javascript">
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
@@ -19,12 +19,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			window.scrollTo(0, 1);
 		}
 	</script>
-	<link href="{{asset('template/css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
-	<link rel="stylesheet" href="{{asset('template/css/shop.css')}}" type="text/css" media="screen" property="" />
-	<link href="{{asset('template/css/style7.css')}}" rel="stylesheet" type="text/css" media="all" />
-	<link rel="stylesheet" type="text/css" href="{{asset('template/css/jquery-ui1.css')}}">
-	<link href="{{asset('template/css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
-	<link href="{{asset('template/css/font-awesome.css')}}" rel="stylesheet">
+	<link href="{{asset('css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="{{asset('css/shop.css')}}" type="text/css" media="screen" property="" />
+	<link rel="stylesheet" href="{{asset('css/about.css')}}" type="text/css" media="screen" property="" />
+	<link rel="stylesheet" type="text/css" href="{{asset('css/contact.css')}}">
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	<link href="{{asset('css/style7.css')}}" rel="stylesheet" type="text/css" media="all" />
+	
+	<link href="{{asset('css/easy-responsive-tabs.css')}}" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="css/checkout.css">
+	<link rel="stylesheet" type="text/css" href="{{asset('css/jquery-ui1.css')}}">
+	<link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
+	<link href="{{asset('css/font-awesome.css')}}" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Montserrat:100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
 	    rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
@@ -35,18 +41,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="wrapper_top_w3layouts">
 			<div class="header_agileits">
 				<div class="logo inner_page_log">
-					<h1><a class="navbar-brand" href="index.html"><span>Downy</span> <i>Shoes</i></a></h1>
+					<h1><a class="navbar-brand" href="{{route('home')}}"><span>Downy</span> <i>Shop</i></a></h1>
 				</div>
 				<div class="overlay overlay-contentpush">
 					<button type="button" class="overlay-close"><i class="fa fa-times" aria-hidden="true"></i></button>
 
 					<nav>
 						<ul>
-							<li><a href="index.html" class="active">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="404.html">Team</a></li>
-							<li><a href="shop.html">Shop Now</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="{{route('home')}}" class="active">Home</a></li>
+							<li><a href="{{route('about')}}">About</a></li>
+							<li><a href="{{route('shop')}}">Shop Now</a></li>
+							<li><a href="{{route('contact')}}">Contact</a></li>
 							<li><a href="{{'logout'}}">Logout</a></li>
 						</ul>
 					</nav>
@@ -81,20 +86,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="services-breadcrumb_w3ls_agileinfo">
 			<div class="inner_breadcrumb_agileits_w3">
 
-				<ul class="short">
-					<li><a href="index.html">Home</a><i>|</i></li>
-					<li>Shop</li>
-				</ul>
+				@yield('service')
+
 			</div>
 		</div>
 	</div>
     
-    @yield('content')
+	@yield('content')
+	
+	<!-- /newsletter-->
+	<div class="newsletter_w3layouts_agile">
+		<div class="col-sm-6 newsleft">
+			<h3>Sign up for Newsletter !</h3>
+		</div>
+		<div class="col-sm-6 newsright">
+			<form action="#" method="post">
+				<input type="email" placeholder="Enter your email..." name="email" required="">
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+
+		<div class="clearfix"></div>
+	</div>
+	<!-- //newsletter-->
 
 	<div class="footer_agileinfo_w3">
 		<div class="footer_inner_info_w3ls_agileits">
 			<div class="col-md-3 footer-left">
-				<h2><a href="index.html"><span>D</span>owny Shoes </a></h2>
+				<h2><a href="{{route('home')}}"><span>D</span>owny Shoes </a></h2>
 				<p>Lorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
 				<ul class="social-nav model-3d-0 footer-social social two">
 					<li>
@@ -128,11 +147,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="col-md-4 sign-gd">
 						<h4>Our <span>Information</span> </h4>
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
+							<li><a href="{{route('home')}}">Home</a></li>
+							<li><a href="{{route('about')}}">About</a></li>
 							<li><a href="404.html">Services</a></li>
 							<li><a href="404.html">Short Codes</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="{{route('contact')}}">Contact</a></li>
 						</ul>
 					</div>
 
@@ -176,15 +195,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="col-md-3 sign-gd flickr-post">
 						<h4>Flickr <span>Posts</span></h4>
 						<ul>
-							<li><a href="single.html"><img src="{{asset('template/images/t1.jpg')}}" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="{{asset('template/images/t2.jpg')}}" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="{{asset('template/images/t3.jpg')}}" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="{{asset('template/images/t4.jpg')}}" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="{{asset('template/images/t1.jpg')}}" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="{{asset('template/images/t2.jpg')}}" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="{{asset('template/images/t3.jpg')}}" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="{{asset('template/images/t2.jpg')}}" alt=" " class="img-responsive" /></a></li>
-							<li><a href="single.html"><img src="{{asset('template/images/t4.jpg')}}" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="{{asset('images/t1.jpg')}}" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="{{asset('images/t2.jpg')}}" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="{{asset('images/t3.jpg')}}" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="{{asset('images/t4.jpg')}}" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="{{asset('images/t1.jpg')}}" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="{{asset('images/t2.jpg')}}" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="{{asset('images/t3.jpg')}}" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="{{asset('images/t2.jpg')}}" alt=" " class="img-responsive" /></a></li>
+							<li><a href="single.html"><img src="{{asset('images/t4.jpg')}}" alt=" " class="img-responsive" /></a></li>
 						</ul>
 					</div>
 					<div class="clearfix"></div>
@@ -192,13 +211,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="clearfix"></div>
 
-			<p class="copy-right-w3ls-agileits">&copy 2018 Downy Shoes. All rights reserved | Design by <a href="http://w3layouts.com/">w3layouts</a></p>
+			<p class="copy-right-w3ls-agileits">&copy 2020 Downy Shop. All rights reserved | Design by Huy Hieu</p>
 		</div>
 	</div>
 	</div>
-<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-	<script type="text/javascript" src="{{asset('template/js/jquery-2.1.4.min.js')}}"></script>
-	<script src="{{asset('template/js/minicart.js')}}"></script>
+	<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<script type="text/javascript" src="{{asset('js/jquery-2.1.4.min.js')}}"></script>
+	<script src="{{asset('js/minicart.js')}}"></script>
 	<script>
 		shoe.render();
 
@@ -212,11 +231,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			}
 		});
 	</script>
-	<script src="{{asset('template/js/modernizr-2.6.2.min.js')}}"></script>
-	<script src="{{asset('template/js/classie.js')}}"></script>
-	<script src="{{asset('template/js/demo1.js')}}"></script>
-	<script src="{{asset('template/js/search.js')}}"></script>
-	<script src="{{asset('template/js/jquery-ui.js')}}"></script>
+	<script src="{{asset('js/modernizr-2.6.2.min.js')}}"></script>
+	<script src="{{asset('js/classie.js')}}"></script>
+	<script src="{{asset('js/demo1.js')}}"></script>
+	<script src="{{asset('js/search.js')}}"></script>
+	<script src="{{asset('js/jquery-ui.js')}}"></script>
 	<script>
 		$(window).load(function () {
 			$("#slider-range").slider({
@@ -233,9 +252,45 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		}); //]]>
 	</script>
 
+	<script src="js/easy-responsive-tabs.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#horizontalTab').easyResponsiveTabs({
+				type: 'default', //Types: default, vertical, accordion           
+				width: 'auto', //auto or any width like 600px
+				fit: true, // 100% fit in a container
+				closed: 'accordion', // Start closed if in accordion view
+				activate: function (event) { // Callback function if tab is switched
+					var $tab = $(this);
+					var $info = $('#tabInfo');
+					var $name = $('span', $info);
+					$name.text($tab.text());
+					$info.show();
+				}
+			});
+			$('#verticalTab').easyResponsiveTabs({
+				type: 'vertical',
+				width: 'auto',
+				fit: true
+			});
+		});
+	</script>
+	<!-- FlexSlider -->
+	<script src="js/jquery.flexslider.js"></script>
+	<script>
+		// Can also be used with $(document).ready()
+		$(window).load(function () {
+			$('.flexslider').flexslider({
+				animation: "slide",
+				controlNav: "thumbnails"
+			});
+		});
+	</script>
+	<!-- //FlexSlider-->
 
-	<script type="text/javascript" src="{{asset('template/js/move-top.js')}}"></script>
-	<script type="text/javascript" src="{{asset('template/js/easing.js')}}"></script>
+
+	<script type="text/javascript" src="{{asset('js/move-top.js')}}"></script>
+	<script type="text/javascript" src="{{asset('js/easing.js')}}"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
@@ -246,7 +301,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 		});
 	</script>
-	<script type="text/javascript" src="{{asset('template/js/bootstrap-3.1.1.min.js')}}"></script>
+	<script type="text/javascript" src="{{asset('js/bootstrap-3.1.1.min.js')}}"></script>
 
 
 </body>
