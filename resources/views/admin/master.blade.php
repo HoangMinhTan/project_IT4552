@@ -78,6 +78,14 @@
                                 <span class="hide-menu">Dashboard</span>
                             </a>
                         </li>
+                        
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('home')}}"
+                                aria-expanded="false">
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                                <span class="hide-menu">Home Page</span>
+                            </a>
+                        </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('profile')}}"
                                 aria-expanded="false">
