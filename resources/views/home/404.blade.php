@@ -140,7 +140,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="footer_agileinfo_w3">
 		<div class="footer_inner_info_w3ls_agileits">
 			<div class="col-md-3 footer-left">
-				<h2><a href="index.html"><span>D</span>owny Shoes </a></h2>
+				<h2><a href="index.html"><span>D</span>owny Shop </a></h2>
 				<p>This is a shop.</p>
 				<ul class="social-nav model-3d-0 footer-social social two">
 					<li>
@@ -159,12 +159,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<a href="#" class="instagram">
 							<div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
 							<div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div>
-						</a>
-					</li>
-					<li>
-						<a href="#" class="pinterest">
-							<div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-							<div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
 						</a>
 					</li>
 				</ul>

@@ -256,7 +256,7 @@
 	<!-- //top products -->
 	<div class="mid_slider_w3lsagile">
 		<div class="col-md-3 mid_slider_text">
-			<h5>Some More Shoes</h5>
+			<h5>Some More</h5>
 		</div>
 		<div class="col-md-9 mid_slider_info">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -367,7 +367,7 @@
 	<div class="footer_agileinfo_w3">
 		<div class="footer_inner_info_w3ls_agileits">
 			<div class="col-md-3 footer-left">
-				<h2><a href="index.html"><span>D</span>owny Shoes </a></h2>
+				<h2><a href="index.html"><span>D</span>owny Shop </a></h2>
 				<p>This is a shop.</p>
 				<ul class="social-nav model-3d-0 footer-social social two">
 					<li>
