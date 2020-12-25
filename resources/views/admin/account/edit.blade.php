@@ -9,10 +9,10 @@
                         <form class="form-horizontal form-material" action="{{$edit->id}}" method="post">
                             <input type="hidden" name="_token" value="{{csrf_token()}}">
                             <div class="form-group mb-4">
-                                <h3 class="col-md-12 p-0">Sửa thông tin tài khoản</h3>
+                                <h3 class="col-md-12 p-0">Edit account information</h3>
                             </div>
                             <div class="form-group mb-4">
-                                <label class="col-md-12 p-0">Họ và tên</label>
+                                <label class="col-md-12 p-0">Fullname</label>
                                 <div class="col-md-12 border-bottom p-0">
                                     <input type="text" placeholder="{{$edit['name']}}" name="name" value="{{$edit['name']}}"
                                         class="form-control p-0 border-0"> </div>
@@ -26,7 +26,7 @@
                                 </div>
                             </div>
                             <div class="form-group mb-4">
-                                <label class="col-md-12 p-0">Điện thoại</label>
+                                <label class="col-md-12 p-0">Phone</label>
                                 <div class="col-md-12 border-bottom p-0">
                                     <input type="text" placeholder="{{$edit['phone']}}" name="phone" value="{{$edit['phone']}}"
                                         class="form-control p-0 border-0">
@@ -40,12 +40,12 @@
                             </div>
                             @if ($edit['role']==0)
                             <div class="form-group mb-4">
-                                <label class="col-sm-12">Quyền</label>
+                                <label class="col-sm-12">Role</label>
                                 <div class="col-sm-12 border-bottom">
                                     <select name="role" value="{{$edit['role']}}" class="form-control p-0 border-0">
-                                        <option value="0" selected>Quản lý</option>
-                                        <option value="1">Nhân viên</option>
-                                        <option value="2">Khách hàng</option>
+                                        <option value="0" selected>Manager</option>
+                                        <option value="1">Employee</option>
+                                        <option value="2">Customer</option>
                                     </select>
                                 </div>
                             </div>
@@ -56,9 +56,9 @@
                                 <label class="col-sm-12">Quyền</label>
                                 <div class="col-sm-12 border-bottom">
                                     <select name="role" value="{{$edit['role']}}" class="form-control p-0 border-0">
-                                        <option value="0">Quản lý</option>
-                                        <option value="1"selected>Nhân viên</option>
-                                        <option value="2">Khách hàng</option>
+                                        <option value="0">Manager</option>
+                                        <option value="1"selected>Employee</option>
+                                        <option value="2">Customer</option>
                                     </select>
                                 </div>
                             </div>
@@ -68,9 +68,9 @@
                                 <label class="col-sm-12">Quyền</label>
                                 <div class="col-sm-12 border-bottom">
                                     <select name="role" value="{{$edit['role']}}" class="form-control p-0 border-0">
-                                        <option value="0">Quản lý</option>
-                                        <option value="1">Nhân viên</option>
-                                        <option value="2" selected>Khách hàng</option>
+                                        <option value="0">Manager</option>
+                                        <option value="1">Employee</option>
+                                        <option value="2" selected>Customer</option>
                                     </select>
                                 </div>
                             </div>

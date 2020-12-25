@@ -9,14 +9,14 @@
                         <form class="form-horizontal form-material" action="{{route('add_category')}}" method="post">
                             <input type="hidden" name="_token" value="{{csrf_token()}}">
                             <div class="form-group mb-4">
-                                <label class="col-md-12 p-0">Tên loại</label>
+                                <label class="col-md-12 p-0">Category's Name</label>
                                 <div class="col-md-12 border-bottom p-0">
                                     <input type="text" placeholder="Tên loại" name="category"
                                         class="form-control p-0 border-0"> </div>
                             </div>
                             <div class="form-group mb-4">
                                 <div class="col-sm-12">
-                                    <button class="btn btn-success">Thêm loại sản phẩm</button>
+                                    <button class="btn btn-success">Add category</button>
                                 </div>
                             </div>
                         </form>

@@ -9,19 +9,19 @@
                     <div class="col-sm-12">
                         <div class="white-box">
                             <div class="col-sm-12">
-                                <h3 class="box-title" style="float:left">Quản lý nhà cung cấp</h3>
+                                <h3 class="box-title" style="float:left">Supplier manager</h3>
                             </div>
                             <div class="col-sm-12">
-                                <a class="btn btn-success" style="float:right" href="{{route('add_supplier')}}">Thêm nhà cung cấp</a>
+                                <a class="btn btn-success" style="float:right" href="{{route('add_supplier')}}">Add supplier</a>
                             </div>
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
                                         <tr>
                                             <th class="border-top-0">ID</th>
-                                            <th class="border-top-0">Tên nhà cung cấp</th>
-                                            <th class="border-top-0">Địa chỉ</th>
-                                            <th class="border-top-0">Điện thoại</th>
+                                            <th class="border-top-0">Supplier</th>
+                                            <th class="border-top-0">Address</th>
+                                            <th class="border-top-0">Phone</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -31,8 +31,8 @@
                                             <td>{{$supplier->supplier}}</td>
                                             <td>{{$supplier->address}}</td>
                                             <td>{{$supplier->phone}}</td>
-                                            <td class="center"><a href="supplier/delete/{{$supplier['id']}}"><i class="far fa-trash-alt"></i> Xóa</a></td>
-                                            <td class="center"><a href="supplier/edit/{{$supplier['id']}}"><i class="fas fa-edit"></i> Sửa</a></td>
+                                            <td class="center"><a href="supplier/delete/{{$supplier['id']}}"><i class="far fa-trash-alt"></i> Delete</a></td>
+                                            <td class="center"><a href="supplier/edit/{{$supplier['id']}}"><i class="fas fa-edit"></i> Edit</a></td>
                                         </tr>
                                         @endforeach
                                     </tbody>

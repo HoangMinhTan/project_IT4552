@@ -1,0 +1,2 @@
+id,bill_id,product_id,quantity,price,total,created_at,updated_at
+1,1,1,4,123,2435,,

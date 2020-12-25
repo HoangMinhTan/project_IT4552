@@ -9,17 +9,17 @@
                     <div class="col-sm-12">
                         <div class="white-box">
                             <div class="col-sm-12">
-                                <h3 class="box-title" style="float:left">Chi tiết hóa đơn số {{$id}}</h3>
+                                <h3 class="box-title" style="float:left">Bill detail: No. {{$id}}</h3>
                             </div>
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th class="border-top-0">Mã sản phẩm</th>
-                                            <th class="border-top-0">Tên</th>
-                                            <th class="border-top-0">Số lượng</th>
-                                            <th class="border-top-0">Đơn giá </th>
-                                            <th class="border-top-0">Thành tiền</th>
+                                            <th class="border-top-0">Product ID</th>
+                                            <th class="border-top-0">Name</th>
+                                            <th class="border-top-0">Quantity</th>
+                                            <th class="border-top-0">Unit Price </th>
+                                            <th class="border-top-0">Total Price</th>
                                         </tr>
                                     </thead>
                                     <tbody>
