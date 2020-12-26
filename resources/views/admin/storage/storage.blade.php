@@ -48,6 +48,9 @@
                                 </table>
                             </div>
                         </div>
+                        <div style="float: right">
+                            {{ $products->render('vendor.pagination.bootstrap-4') }}
+                        </div>
                     </div>
                 </div>
             </div>

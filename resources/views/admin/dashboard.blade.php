@@ -18,7 +18,7 @@
                                     style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
                             </div>
                         </li>
-                        <li class="ml-auto"><span class="counter text-success">659</span></li>
+                        <li class="ml-auto"><span class="counter text-success">{{$count_bill}}</span></li>
                     </ul>
                 </div>
             </div>
@@ -378,7 +378,6 @@
         url: "@chart('chart')",
         hooks: new ChartisanHooks()
     .beginAtZero()
-    
     .colors(['#e7f3fb', '#4c5667'])
     .borderColors(['#2cabe3', '#4c5667'])
     .datasets([{ type: 'line', fill: true,  },{ type: 'bar', fill: false }]),

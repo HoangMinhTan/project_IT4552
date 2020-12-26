@@ -39,6 +39,9 @@
                                 </table>
                             </div>
                         </div>
+                        <div style="float: right">
+                            {{ $suppliers->render('vendor.pagination.bootstrap-4') }}
+                        </div>
                     </div>
                 </div>
             </div>

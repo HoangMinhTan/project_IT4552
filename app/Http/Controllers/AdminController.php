@@ -13,7 +13,8 @@ class AdminController extends Controller
     public function dashboard(){
         $user = Auth::user();
         $count_customer = DB::table('users')->where('role',2)->count();
-        return view('admin.dashboard', ['user' => $user, 'count_customer'=>$count_customer]);
+        $count_bill = DB::table('bill')->count();
+        return view('admin.dashboard', ['user' => $user, 'count_customer'=>$count_customer, 'count_bill' => $count_bill]);
     }
 
     public function profile(){
@@ -32,7 +33,7 @@ class AdminController extends Controller
 
     public function account(){
         $user = Auth::user();
-        $users = User::orderBy('role', 'asc')->get();
+        $users = User::orderBy('role', 'asc')->paginate(15);
         return view('admin.account.account',['user'=> $user, 'users'=>$users]);
     }
 

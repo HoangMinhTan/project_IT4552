@@ -10,7 +10,7 @@ class supplierController extends Controller
 {
     public function supplier(){
         $user = Auth:: user();
-        $supplier = Supplier::all();
+        $supplier = Supplier::paginate(15);
         return view('admin.supplier.supplier', ['user'=>$user, 'suppliers'=>$supplier]);
     }
 

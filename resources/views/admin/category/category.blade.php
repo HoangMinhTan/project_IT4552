@@ -35,6 +35,9 @@
                                 </table>
                             </div>
                         </div>
+                        <div style="float: right">
+                            {{ $categories->render('vendor.pagination.bootstrap-4') }}
+                        </div>
                     </div>
                 </div>
             </div>

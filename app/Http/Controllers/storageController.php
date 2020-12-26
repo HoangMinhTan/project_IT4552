@@ -12,7 +12,7 @@ class storageController extends Controller
 {
     public function storage(){
         $user = Auth:: user();
-        $product = Product::all();
+        $product = Product::paginate(15);
         return view('admin.storage.storage', ['user'=>$user, 'products'=>$product]);
     }
 

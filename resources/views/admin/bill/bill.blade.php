@@ -35,6 +35,10 @@
                                 </table>
                             </div>
                         </div>
+                        
+                <div style="float: right">
+                    {{ $bills->render('vendor.pagination.bootstrap-4') }}
+                </div>
                     </div>
                 </div>
             </div>

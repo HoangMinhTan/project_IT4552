@@ -59,6 +59,10 @@
                         </table>
                     </div>
                 </div>
+                <div style="float: right">
+                    {{ $users->render('vendor.pagination.bootstrap-4') }}
+                </div>
+        
             </div>
         </div>
     </div>

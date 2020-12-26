@@ -11,7 +11,7 @@ class billController extends Controller
 {
     public function bill(){
         $user = Auth::user();
-        $bills = Bill::all();
+        $bills = Bill::paginate(15);
         return view('admin.bill.bill', ['user'=> $user, 'bills' => $bills]);
     }
 
