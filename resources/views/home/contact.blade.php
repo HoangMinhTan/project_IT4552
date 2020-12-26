@@ -48,7 +48,7 @@
 						</div>
 						<div class="col-md-10 col-sm-10 col-xs-10 contact-text">
 							<h4>Mail us</h4>
-							<p><a href="mailto:downyshoes@gmail">downyshoes@gmail</a></p>
+							<p><a href="mailto:downyshop@gmail">downyshop@gmail</a></p>
 						</div>
 						<div class="clearfix"></div>
 					</div>

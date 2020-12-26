@@ -17,8 +17,8 @@
 					<img src="images/ab.jpg" alt=" " class="img-responsive">
 				</div>
 				<div class="col-md-6 news-right">
-					<h4>Welcome to our Downy Shoes</h4>
-					<p class="sub_p">Welcome to us. Best shoes shop in the world
+					<h4>Welcome to our Downy Shop</h4>
+					<p class="sub_p">Welcome to us. Best shop in the world
 					</p>
 					<p>Always free ship. 
 					</p>
@@ -78,21 +78,6 @@
 							</div>
 						</div>
 					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingThree">
-							<h4 class="panel-title asd">
-								<a class="pa_italic collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
-								    aria-controls="collapseThree">
-							  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>All
-							</a>
-							</h4>
-						</div>
-						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-							<div class="panel-body panel_text">
-								Here we are.
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 
@@ -130,7 +115,7 @@
 	<!-- /Properties -->
 	<div class="mid_slider_w3lsagile">
 		<div class="col-md-3 mid_slider_text">
-			<h5>Some More Shoes</h5>
+			<h5>Some More</h5>
 		</div>
 		<div class="col-md-9 mid_slider_info">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -226,4 +211,3 @@
 
 	
 	@endsection
-	

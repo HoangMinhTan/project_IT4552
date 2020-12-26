@@ -163,8 +163,8 @@
 		<div class="col-md-6 style-grid style-grid-2">
 			<div class="style-image-1_info">
 				<div class="style-grid-2-text_info">
-					<h3>Nike DOWNSHIFTER</h3>
-					<p>Nike Shoes .</p>
+					<h3>Cute Hoodie</h3>
+					<p>Hoodie for Women</p>
 					<div class="shop-button">
 						<a href="{{route('shop')}}">Shop Now</a>
 					</div>
@@ -172,9 +172,6 @@
 			</div>
 			<div class="style-image-2">
 				<img src="images/b2.jpg" alt="shoe">
-				<div class="style-grid-2-text">
-					<h3>Air force</h3>
-				</div>
 			</div>
 		</div>
 		<div class="clearfix"></div>
@@ -196,18 +193,12 @@
 				</div>
 				<div class="style-image-2">
 					<img src="images/b4.jpg" alt="shoe">
-					<div class="style-grid-2-text">
-						<h3>Air force</h3>
-					</div>
 				</div>
 			</div>
 			<div class="col-md-6 grids_sec_2_left">
 
 				<div class="style-image-2">
 					<img src="images/b3.jpg" alt="shoe">
-					<div class="style-grid-2-text">
-						<h3>Air force</h3>
-					</div>
 				</div>
 				<div class="grid_sec_info last">
 					<div class="style-grid-2-text_info">
@@ -340,7 +331,7 @@
 		<div class="footer_inner_info_w3ls_agileits">
 			<div class="col-md-3 footer-left">
 				<h2><a href="{{route('home')}}"><span>D</span>owny Shop </a></h2>
-				<p>This is a shoes shop.</p>
+				<p>This is a shop.</p>
 				<ul class="social-nav model-3d-0 footer-social social two">
 					<li>
 						<a href="#" class="facebook">

@@ -3,13 +3,12 @@
 <html lang="zxx">
 
 <head>
-	<title>Downy Shoes an Ecommerce Category Bootstrap Responsive Website | Shop :: w3layouts</title>
+	<title>Downy Shop</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="Downy Shoes Responsive web  Bootstrap Web , Flat Web , Android Compatible web  
-Smartphone Compatible web  free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<meta name="keywords" content="Downy Shop" />
 	<script type="application/x-javascript">
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
@@ -125,7 +124,8 @@ Smartphone Compatible web  free webdesigns for Nokia, Samsung, LG, SonyEricsson,
 		<div class="footer_inner_info_w3ls_agileits">
 			<div class="col-md-3 footer-left">
 				<h2><a href="{{route('home')}}"><span>D</span>owny Shop </a></h2>
-				<p>Lorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+
+				<p>This is a shop.</p>
 				<ul class="social-nav model-3d-0 footer-social social two">
 					<li>
 						<a href="#" class="facebook">
@@ -185,7 +185,7 @@ Smartphone Compatible web  free webdesigns for Nokia, Samsung, LG, SonyEricsson,
 								</div>
 								<div class="address-right">
 									<h6>Email Address</h6>
-									<p>Email :<a href="mailto:example@email.com"> mail@example.com</a></p>
+									<p>Email :<a href="mailto:downyshop@gmail.com"> downyshop@gmail.com</a></p>
 								</div>
 								<div class="clearfix"> </div>
 							</div>
@@ -195,7 +195,7 @@ Smartphone Compatible web  free webdesigns for Nokia, Samsung, LG, SonyEricsson,
 								</div>
 								<div class="address-right">
 									<h6>Location</h6>
-									<p>Broome St, NY 10002,California, USA.
+									<p>Dai hoc Bach Khoa Ha Noi
 
 									</p>
 								</div>

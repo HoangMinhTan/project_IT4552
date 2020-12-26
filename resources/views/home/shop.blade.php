@@ -157,8 +157,9 @@
 							<img src="images/s4.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
-							<h3>Shuberry Heels</h3>
-							<a href="{{route('single')}}">$180.00</a>
+
+							<h3>Adidas Hoodie</h3>
+							<a href="single.html">$180.00</a>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -167,8 +168,9 @@
 							<img src="images/s2.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
-							<h3>Chikku Loafers</h3>
-							<a href="{{route('single')}}">$99.00</a>
+
+							<h3>Chikku Jeans</h3>
+							<a href="single.html">$99.00</a>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -177,8 +179,9 @@
 							<img src="images/s1.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
-							<h3>Bella Toes</h3>
-							<a href="{{route('single')}}">$165.00</a>
+
+							<h3>White T-shirt</h3>
+							<a href="single.html">$165.00</a>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -187,8 +190,9 @@
 							<img src="images/s5.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
-							<h3>Red Bellies</h3>
-							<a href="{{route('single')}}">$225.00</a>
+
+							<h3>Yellow T-shirt</h3>
+							<a href="single.html">$225.00</a>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -197,8 +201,9 @@
 							<img src="images/s3.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
-							<h3>(SRV) Sneakers</h3>
-							<a href="{{route('single')}}">$169.00</a>
+
+							<h3>SRV Jeans</h3>
+							<a href="single.html">$169.00</a>
 						</div>
 						<div class="clearfix"></div>
 					</div>
