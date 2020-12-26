@@ -21,12 +21,12 @@
 	<link href="{{asset('css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
 	<link rel="stylesheet" href="{{asset('css/shop.css')}}" type="text/css" media="screen" property="" />
 	<link rel="stylesheet" href="{{asset('css/about.css')}}" type="text/css" media="screen" property="" />
-	<link rel="stylesheet" type="text/css" href="{{asset('css/contact.css')}}">
-	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" type="{{asset('text/css')}}" href="{{asset('css/contact.css')}}">
+	<link rel="stylesheet" href="{{asset('css/flexslider.css')}}" type="text/css" media="screen" />
 	<link href="{{asset('css/style7.css')}}" rel="stylesheet" type="text/css" media="all" />
 	
 	<link href="{{asset('css/easy-responsive-tabs.css')}}" rel='stylesheet' type='text/css' />
-	<link rel="stylesheet" type="text/css" href="css/checkout.css">
+	<link rel="stylesheet" type="text/css" href="{{asset('css/checkout.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('css/jquery-ui1.css')}}">
 	<link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
 	<link href="{{asset('css/font-awesome.css')}}" rel="stylesheet">
@@ -263,7 +263,7 @@
 		}); //]]>
 	</script>
 
-	<script src="js/easy-responsive-tabs.js"></script>
+	<script src="{{asset('js/easy-responsive-tabs.js')}}"></script>
 	<script>
 		$(document).ready(function () {
 			$('#horizontalTab').easyResponsiveTabs({
@@ -287,7 +287,7 @@
 		});
 	</script>
 	<!-- FlexSlider -->
-	<script src="js/jquery.flexslider.js"></script>
+	<script src="{{asset('js/jquery.flexslider.js')}}"></script>
 	<script>
 		// Can also be used with $(document).ready()
 		$(window).load(function () {

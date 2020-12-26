@@ -6,7 +6,7 @@
             <div class="col-lg-12 col-xlg-12 col-md-12">
                 <div class="card">
                     <div class="card-body">
-                        <form class="form-horizontal form-material" action="{{route('add_product')}}" method="post">
+                        <form class="form-horizontal form-material" action="{{route('add_product')}}" method="post" enctype="multipart/form-data">
                             <input type="hidden" name="_token" value="{{csrf_token()}}">
                             <div class="form-group mb-4">
                                 <label class="col-md-12 p-0">Product Name</label>
@@ -46,6 +46,18 @@
                                     <textarea rows="5" placeholder="Note" name="note" class="form-control p-0 border-0"></textarea>
                                 </div>
                             </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-2 imgUp">
+                                        <div class="imagePreview"></div>
+                                        <label class="btn btn-primary">
+                                            Upload<input type="file" class="uploadFile img" value="Upload Photo" name="image1" style="width: 0px;height: 0px;overflow: hidden;">
+                                        </label>
+                                    </div><!-- col-2 -->
+                                    <i class="fa fa-plus imgAdd"></i>
+                                    <i class="fa fa-minus imgSub"></i>
+                                </div><!-- row -->
+                            </div><!-- container -->
                             
                             <div class="form-group mb-4">
                                 <div class="col-sm-12">

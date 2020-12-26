@@ -37,7 +37,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 col-xs-12">
                 <div class="white-box analytics-info">
-                    <h3 class="box-title">Unique Visitor</h3>
+                    <h3 class="box-title">Total Product</h3>
                     <ul class="list-inline two-part d-flex align-items-center mb-0">
                         <li>
                             <div id="sparklinedash3"><canvas width="67" height="30"

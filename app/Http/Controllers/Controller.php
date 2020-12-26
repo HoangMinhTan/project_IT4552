@@ -6,6 +6,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
+use App\Models\Product;
 
 class Controller extends BaseController
 {
@@ -16,7 +17,8 @@ class Controller extends BaseController
     }
 
     public function shop(){
-        return view('home.shop');
+        $products = Product::paginate(9);
+        return view('home.shop', ['products'=> $products]);
     }
 
     public function about(){
@@ -27,8 +29,9 @@ class Controller extends BaseController
         return view('home.contact');
     }
 
-    public function single(){
-        return view('home.single');
+    public function single($id){
+        $single = Product::find($id);
+        return view('home.single', ['single' => $single]);
     }
 
     public function checkout(){

@@ -9,9 +9,9 @@
                         <form class="form-horizontal form-material" action="{{$edit->id}}" method="post">
                             <input type="hidden" name="_token" value="{{csrf_token()}}">
                             <div class="form-group mb-4">
-                                <label class="col-md-12 p-0">Category's Name</label>
+                                <label class="col-md-12 p-0">Manufacturer's Name</label>
                                 <div class="col-md-12 border-bottom p-0">
-                                    <input type="text" placeholder="{{$edit['category']}}" name="category" value="{{$edit['category']}}"
+                                    <input type="text" placeholder="{{$edit['manufacturer']}}" name="manufacturer" value="{{$edit['manufacturer']}}"
                                         class="form-control p-0 border-0"> </div>
                             </div>
                             

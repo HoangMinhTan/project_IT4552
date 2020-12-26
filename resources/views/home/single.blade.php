@@ -17,14 +17,14 @@
 					<div class="flexslider">
 
 						<ul class="slides">
-							<li data-thumb="images/d2.jpg">
-								<div class="thumb-image"> <img src="images/d2.jpg" data-imagezoom="true" class="img-responsive"> </div>
+							<li data-thumb="../images/{{$single->id}}/1.jpg">
+								<div class="thumb-image"> <img src="../images/{{$single->id}}/1.jpg" data-imagezoom="true" class="img-responsive"> </div>
 							</li>
-							<li data-thumb="images/d1.jpg">
-								<div class="thumb-image"> <img src="images/d1.jpg" data-imagezoom="true" class="img-responsive"> </div>
+							<li data-thumb="../images/{{$single->id}}/2.jpg">
+								<div class="thumb-image"> <img src="../images/{{$single->id}}/2.jpg" data-imagezoom="true" class="img-responsive"> </div>
 							</li>
-							<li data-thumb="images/d3.jpg">
-								<div class="thumb-image"> <img src="images/d3.jpg" data-imagezoom="true" class="img-responsive"> </div>
+							<li data-thumb="../images/{{$single->id}}/3.jpg">
+								<div class="thumb-image"> <img src="../images/{{$single->id}}/3.jpg" data-imagezoom="true" class="img-responsive"> </div>
 							</li>
 						</ul>
 						<div class="clearfix"></div>
@@ -32,9 +32,9 @@
 				</div>
 			</div>
 			<div class="col-md-8 single-right-left simpleCart_shelfItem">
-				<h3>Shoe Rock Vision(SRV) Sneakers (Blue)</h3>
+				<h3>{{$single->name}}</h3>
 				<p><span class="item_price">$650</span>
-					<del>$1,199</del>
+					<del>${{$single->out_price}}</del>
 				</p>
 				<div class="rating1">
 					<ul class="stars">
@@ -45,25 +45,8 @@
 						<li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
-				<div class="description">
-					<h5>Check delivery, payment options and charges at your location</h5>
-					<form action="#" method="post">
-						<input type="text" value="Enter pincode" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter pincode';}"
-						    required="">
-						<input type="submit" value="Check">
-					</form>
-				</div>
-				<div class="color-quality">
-					<div class="color-quality-right">
-						<h5>Quality :</h5>
-						<select id="country1" onchange="change_country(this.value)" class="frm-field required sect">
-								<option value="null">5 Qty</option>
-								<option value="null">6 Qty</option> 
-								<option value="null">7 Qty</option>					
-								<option value="null">10 Qty</option>								
-							</select>
-					</div>
-				</div>
+				
+				
 				<div class="occasional">
 					<h5>Types :</h5>
 					<div class="colr ert">
@@ -147,7 +130,7 @@
 								<div class="bootstrap-tab-text-grids">
 									<div class="bootstrap-tab-text-grid">
 										<div class="bootstrap-tab-text-grid-left">
-											<img src="images/t1.jpg" alt=" " class="img-responsive">
+											<img src="../images/t1.jpg" alt=" " class="img-responsive">
 										</div>
 										<div class="bootstrap-tab-text-grid-right">
 											<ul>
@@ -191,17 +174,17 @@
 					<div class="product-shoe-info shoe">
 						<div class="men-pro-item">
 							<div class="men-thumb-item">
-								<img src="images/s4.jpg" alt="">
+								<img src="../images/s4.jpg" alt="">
 								<div class="men-cart-pro">
 									<div class="inner-men-cart-pro">
-										<a href="{{route('single')}}" class="link-product-add-cart">Quick View</a>
+										<a href="single.html" class="link-product-add-cart">Quick View</a>
 									</div>
 								</div>
 								<span class="product-new-top">New</span>
 							</div>
 							<div class="item-info-product">
 								<h4>
-									<a href="{{route('single')}}">Shuberry Heels </a>
+									<a href="single.html">Shuberry Heels </a>
 								</h4>
 								<div class="info-product-price">
 									<div class="grid_meta">
@@ -240,17 +223,17 @@
 					<div class="product-shoe-info shoe">
 						<div class="men-pro-item">
 							<div class="men-thumb-item">
-								<img src="images/s5.jpg" alt="">
+								<img src="../images/s5.jpg" alt="">
 								<div class="men-cart-pro">
 									<div class="inner-men-cart-pro">
-										<a href="{{route('single')}}" class="link-product-add-cart">Quick View</a>
+										<a href="single.html" class="link-product-add-cart">Quick View</a>
 									</div>
 								</div>
 								<span class="product-new-top">New</span>
 							</div>
 							<div class="item-info-product">
 								<h4>
-									<a href="{{route('single')}}">Red Bellies </a>
+									<a href="single.html">Red Bellies </a>
 								</h4>
 								<div class="info-product-price">
 									<div class="grid_meta">
@@ -289,17 +272,17 @@
 					<div class="product-shoe-info shoe">
 						<div class="men-pro-item">
 							<div class="men-thumb-item">
-								<img src="images/s7.jpg" alt="">
+								<img src="../images/s7.jpg" alt="">
 								<div class="men-cart-pro">
 									<div class="inner-men-cart-pro">
-										<a href="{{route('single')}}" class="link-product-add-cart">Quick View</a>
+										<a href="single.html" class="link-product-add-cart">Quick View</a>
 									</div>
 								</div>
 								<span class="product-new-top">New</span>
 							</div>
 							<div class="item-info-product">
 								<h4>
-									<a href="{{route('single')}}">Running Shoes</a>
+									<a href="single.html">Running Shoes</a>
 								</h4>
 								<div class="info-product-price">
 									<div class="grid_meta">
@@ -338,17 +321,17 @@
 					<div class="product-shoe-info shoe">
 						<div class="men-pro-item">
 							<div class="men-thumb-item">
-								<img src="images/s8.jpg" alt="">
+								<img src="../images/s8.jpg" alt="">
 								<div class="men-cart-pro">
 									<div class="inner-men-cart-pro">
-										<a href="{{route('single')}}" class="link-product-add-cart">Quick View</a>
+										<a href="single.html" class="link-product-add-cart">Quick View</a>
 									</div>
 								</div>
 								<span class="product-new-top">New</span>
 							</div>
 							<div class="item-info-product">
 								<h4>
-									<a href="{{route('single')}}">Sukun Casuals</a>
+									<a href="single.html">Sukun Casuals</a>
 								</h4>
 								<div class="info-product-price">
 									<div class="grid_meta">
@@ -410,64 +393,64 @@
 					<div class="item">
 						<div class="row">
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="images/g1.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="../images/g1.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="images/g2.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="../images/g2.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="images/g3.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="../images/g3.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="images/g4.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="../images/g4.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 						</div>
 					</div>
 					<div class="item active">
 						<div class="row">
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="images/g5.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="../images/g5.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="images/g6.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="../images/g6.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="images/g2.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="../images/g2.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="images/g1.jpg" alt="Image" style="max-width:100%;"></div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="row">
-							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="images/g1.jpg" alt="Image" style="max-width:100%;"></div>
-							</div>
-							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="images/g2.jpg" alt="Image" style="max-width:100%;"></div>
-							</div>
-							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="images/g3.jpg" alt="Image" style="max-width:100%;"></div>
-							</div>
-							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="images/g4.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="../images/g1.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 						</div>
 					</div>
 					<div class="item">
 						<div class="row">
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="images/g1.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="../images/g1.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="images/g2.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="../images/g2.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="images/g3.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="../images/g3.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
-								<div class="thumbnail"><img src="images/g4.jpg" alt="Image" style="max-width:100%;"></div>
+								<div class="thumbnail"><img src="../images/g4.jpg" alt="Image" style="max-width:100%;"></div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="row">
+							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+								<div class="thumbnail"><img src="../images/g1.jpg" alt="Image" style="max-width:100%;"></div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+								<div class="thumbnail"><img src="../images/g2.jpg" alt="Image" style="max-width:100%;"></div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+								<div class="thumbnail"><img src="../images/g3.jpg" alt="Image" style="max-width:100%;"></div>
+							</div>
+							<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+								<div class="thumbnail"><img src="../images/g4.jpg" alt="Image" style="max-width:100%;"></div>
 							</div>
 						</div>
 					</div>

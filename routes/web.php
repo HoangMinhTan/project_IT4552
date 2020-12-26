@@ -22,7 +22,7 @@ Route::get('/', 'App\Http\Controllers\Controller@home')->name('home');
 Route::get('shop', 'App\Http\Controllers\Controller@shop')->name('shop');
 Route::get('about', 'App\Http\Controllers\Controller@about')->name('about');
 Route::get('contact', 'App\Http\Controllers\Controller@contact')->name('contact');
-Route::get('single', 'App\Http\Controllers\Controller@single')->name('single');
+Route::get('single/{id}', 'App\Http\Controllers\Controller@single');
 Route::get('checkout', 'App\Http\Controllers\Controller@checkout')->name('checkout');
 Route::get('payment', 'App\Http\Controllers\Controller@payment')->name('payment');
 

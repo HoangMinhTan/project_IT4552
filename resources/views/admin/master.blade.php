@@ -16,6 +16,7 @@
     <link href="{{asset('plugins/bower_components/chartist/dist/chartist.min.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css')}}">
     <link href="{{asset('css/style.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/upload.css')}}" rel="stylesheet">
 </head>
 
 <body>
@@ -161,6 +162,7 @@
     <script src="{{asset('js/waves.js')}}"></script>
     <script src="{{asset('js/sidebarmenu.js')}}"></script>
     <script src="{{asset('js/custom.js')}}"></script>
+    <script src="{{asset('js/upload.js')}}"></script>
     <script src="{{asset('plugins/bower_components/chartist/dist/chartist.min.js')}}"></script>
     <script src="{{asset('plugins/bower_components/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js')}}"></script>
     <script src="{{asset('js/pages/dashboards/dashboard1.js')}}"></script>

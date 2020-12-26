@@ -24,7 +24,7 @@ class storageController extends Controller
     }
 
     public function Padd(Request $request){
-        \DB::table('product')->insert([
+        $result = \DB::table('product')->insert([
             'name'=> $request->name,
             'quantity' => 0,
             'category_id'=> $request->category_id,
@@ -33,6 +33,14 @@ class storageController extends Controller
             'out_price'=>$request->out_price,
             'note'=> $request->note
         ]);
+        if ($result)
+        {
+            $id = Product::orderBy('id', 'desc')->first()->id;
+            for( $i=1; $i<5; $i++){
+                if ($request->hasFile('image'.$i))
+                    $request->file('image'.$i)->move('images/'.$id, $i.'.jpg');
+            }
+        }
         return redirect('storage');
     }
 

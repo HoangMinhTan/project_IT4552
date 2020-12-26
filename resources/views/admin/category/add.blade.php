@@ -11,7 +11,7 @@
                             <div class="form-group mb-4">
                                 <label class="col-md-12 p-0">Category's Name</label>
                                 <div class="col-md-12 border-bottom p-0">
-                                    <input type="text" placeholder="Tên loại" name="category"
+                                    <input type="text" placeholder="Category" name="category"
                                         class="form-control p-0 border-0"> </div>
                             </div>
                             <div class="form-group mb-4">
