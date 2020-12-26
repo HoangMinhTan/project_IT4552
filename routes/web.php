@@ -55,6 +55,15 @@ Route::group(['middleware' => 'admin'], function()
         Route::get('delete/{id}','App\Http\Controllers\categoryController@delete');
     });
 
+    Route::group(['prefix' => 'manufacturer'], function () {
+        Route::get('/', 'App\Http\Controllers\manufacturerController@manufacturer')->name('manufacturer');
+        Route::get('add','App\Http\Controllers\manufacturerController@add' )->name('add_manufacturer');
+        Route::post('add', 'App\Http\Controllers\manufacturerController@Padd')->name('add_manufacturer');
+        Route::get('edit/{id}', 'App\Http\Controllers\manufacturerController@edit')->name('edit_manufacturer');
+        Route::post('edit/{id}', 'App\Http\Controllers\manufacturerController@Pedit');
+        Route::get('delete/{id}','App\Http\Controllers\manufacturerController@delete');
+    });
+
     Route::group(['prefix' => 'supplier'], function () {
         Route::get('/', 'App\Http\Controllers\supplierController@supplier')->name('supplier');
         Route::get('add','App\Http\Controllers\supplierController@add' )->name('add_supplier');

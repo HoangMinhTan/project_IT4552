@@ -9,36 +9,35 @@
                     <div class="col-sm-12">
                         <div class="white-box">
                             <div class="col-sm-12">
-                                <h3 class="box-title" style="float:left">Bill manager</h3>
+                                <h3 class="box-title" style="float:left">Manufacturer manager</h3>
+                            </div>
+                            <div class="col-sm-12">
+                                <a class="btn btn-success" style="float:right" href="{{route('add_manufacturer')}}">Add manufacturer</a>
                             </div>
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
                                         <tr>
                                             <th class="border-top-0">ID</th>
-                                            <th class="border-top-0">Customer's Name</th>
-                                            <th class="border-top-0">Total price</th>
-                                            <th class="border-top-0">Time payment</th>
+                                            <th class="border-top-0">Manufacturer's Name</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach($bills as $bill)
+                                        @foreach($manufacturers as $manufacturer)
                                         <tr>
-                                            <td>{{$bill->id}}</td>
-                                            <td>{{$bill->user->name}}</td>
-                                            <td>${{$bill->total}}</td>
-                                            <td>{{$bill->created_at}}</td>
-                                            <td class="center"><a href="bill/detail/{{$bill->id}}"><i class="fas fa-info-circle"></i> Detail</a></td>
+                                            <td>{{$manufacturer->id}}</td>
+                                            <td>{{$manufacturer->manufacturer}}</td>
+                                            <td class="center"><a href="manufacturer/delete/{{$manufacturer['id']}}"><i class="far fa-trash-alt"></i> Delete</a></td>
+                                            <td class="center"><a href="manufacturer/edit/{{$manufacturer['id']}}"><i class="fas fa-edit"></i> Edit</a></td>
                                         </tr>
                                         @endforeach
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-                        
-                <div style="float: right">
-                    {{ $bills->render('vendor.pagination.bootstrap-4') }}
-                </div>
+                        <div style="float: right">
+                            {{ $manufacturers->render('vendor.pagination.bootstrap-4') }}
+                        </div>
                     </div>
                 </div>
             </div>

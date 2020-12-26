@@ -28,8 +28,8 @@
                                             <td>{{$detail->product_id}}</td>
                                             <td>{{$detail->product->name}}</td>
                                             <td>{{$detail->quantity}}</td>
-                                            <td>{{$detail->price}}</td>
-                                            <td>{{$detail->total}}</td>
+                                            <td>${{$detail->price}}</td>
+                                            <td>${{$detail->total}}</td>
                                         </tr>
                                         @endforeach
                                     </tbody>

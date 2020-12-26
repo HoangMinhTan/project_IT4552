@@ -380,7 +380,7 @@
     .beginAtZero()
     .colors(['#e7f3fb', '#4c5667'])
     .borderColors(['#2cabe3', '#4c5667'])
-    .datasets([{ type: 'line', fill: true,  },{ type: 'bar', fill: false }]),
+    .datasets([{ type: 'line', fill: true,  },{ type: 'line', fill: false }]),
       
       });
     </script>

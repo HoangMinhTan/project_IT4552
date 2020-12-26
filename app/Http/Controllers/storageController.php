@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Auth;
 use App\Models\Product;
 use App\Models\Category;
-use App\Models\Supplier;
+use App\Models\Manufacturer;
 
 class storageController extends Controller
 {
@@ -19,8 +19,8 @@ class storageController extends Controller
     public function add(){
         $user = Auth::user();
         $category = Category::all();
-        $suppliers = Supplier::all();
-        return view('admin.storage.add', ['user' =>$user, 'categories'=>$category, 'suppliers'=>$suppliers]);
+        $manufacturers = Manufacturer::all();
+        return view('admin.storage.add', ['user' =>$user, 'categories'=>$category, 'manufacturers'=>$manufacturers]);
     }
 
     public function Padd(Request $request){
@@ -28,7 +28,7 @@ class storageController extends Controller
             'name'=> $request->name,
             'quantity' => 0,
             'category_id'=> $request->category_id,
-            'supplier_id' => $request->supplier_id,
+            'manufacturer_id' => $request->manufacturer_id,
             'in_price' => 0,
             'out_price'=>$request->out_price,
             'note'=> $request->note
@@ -40,15 +40,15 @@ class storageController extends Controller
         $user = Auth::user();
         $edit = Product::find($id);
         $category = Category::all();
-        $suppliers = Supplier::all();
-        return view('admin.storage.edit', ['user'=>$user, 'edit'=>$edit,'categories'=>$category, 'suppliers'=>$suppliers]);
+        $manufacturers = Manufacturer::all();
+        return view('admin.storage.edit', ['user'=>$user, 'edit'=>$edit,'categories'=>$category, 'manufacturers'=>$manufacturers]);
     }
 
     public function Pedit(Request $request,$id){
         $edit = Product::find($id);
         $edit->name = $request->name;
         $edit->category_id = $request->category_id;
-        $edit->supplier_id = $request->supplier_id;
+        $edit->manufacturer_id = $request->manufacturer_id;
         $edit->out_price = $request->out_price;
         $edit->note = $request->note;
         $edit->save();

@@ -25,11 +25,11 @@
                                 </div>
                             </div>
                             <div class="form-group mb-4">
-                                <label class="col-sm-12 p-0">Supplier</label>
+                                <label class="col-sm-12 p-0">Manufacturer</label>
                                 <div class="col-sm-12 border-bottom p-0">
-                                    <select class="form-control p-0 border-0" name="supplier_id">
-                                        @foreach ($suppliers as $supplier)
-                                        <option value={{$supplier->id}}>{{$supplier->supplier}}</option>
+                                    <select class="form-control p-0 border-0" name="manufacturer_id">
+                                        @foreach ($manufacturers as $manufacturer)
+                                        <option value={{$manufacturer->id}}>{{$manufacturer->manufacturer}}</option>
                                         @endforeach
                                     </select>
                                 </div>
