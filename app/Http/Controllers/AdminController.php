@@ -6,12 +6,14 @@ use Illuminate\Http\Request;
 use Auth;
 use App\Models\User;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
 {
     public function dashboard(){
         $user = Auth::user();
-        return view('admin.dashboard', ['user' => $user]);
+        $count_customer = DB::table('users')->where('role',2)->count();
+        return view('admin.dashboard', ['user' => $user, 'count_customer'=>$count_customer]);
     }
 
     public function profile(){
@@ -21,7 +23,11 @@ class AdminController extends Controller
 
     public function test(){
         $user = Auth::user();
-        return view('admin.table_list',['user'=>$user]);
+        $count_customer = DB::table('users')->where('role',2)->get();
+        foreach ($count_customer as $key)
+        {
+            echo Carbon::parse($key->created_at)->month;
+        }
     }
 
     public function account(){

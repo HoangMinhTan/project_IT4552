@@ -157,6 +157,7 @@
 							<img src="images/s4.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
+
 							<h3>Adidas Hoodie</h3>
 							<a href="single.html">$180.00</a>
 						</div>
@@ -167,6 +168,7 @@
 							<img src="images/s2.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
+
 							<h3>Chikku Jeans</h3>
 							<a href="single.html">$99.00</a>
 						</div>
@@ -177,6 +179,7 @@
 							<img src="images/s1.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
+
 							<h3>White T-shirt</h3>
 							<a href="single.html">$165.00</a>
 						</div>
@@ -187,6 +190,7 @@
 							<img src="images/s5.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
+
 							<h3>Yellow T-shirt</h3>
 							<a href="single.html">$225.00</a>
 						</div>
@@ -197,6 +201,7 @@
 							<img src="images/s3.jpg" alt="">
 						</div>
 						<div class="col-xs-8 img-deal1">
+
 							<h3>SRV Jeans</h3>
 							<a href="single.html">$169.00</a>
 						</div>
@@ -229,14 +234,14 @@
 										<img src="images/s1.jpg" alt="">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{route('single')}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 									</div>
 									<div class="item-info-product">
 										<h4>
-											<a href="single.html">Bella Toes </a>
+											<a href="{{route('single')}}">Bella Toes </a>
 										</h4>
 										<div class="info-product-price">
 											<div class="grid_meta">
@@ -278,14 +283,14 @@
 										<img src="images/s2.jpg" alt="">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{route('single')}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 									</div>
 									<div class="item-info-product">
 										<h4>
-											<a href="single.html">Chikku Loafers </a>
+											<a href="{{route('single')}}">Chikku Loafers </a>
 										</h4>
 										<div class="info-product-price">
 											<div class="grid_meta">
@@ -327,14 +332,14 @@
 										<img src="images/s3.jpg" alt="">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{route('single')}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 									</div>
 									<div class="item-info-product">
 										<h4>
-											<a href="single.html">(SRV) Sneakers </a>
+											<a href="{{route('single')}}">(SRV) Sneakers </a>
 										</h4>
 										<div class="info-product-price">
 											<div class="grid_meta">
@@ -378,14 +383,14 @@
 										<img src="images/s4.jpg" alt="">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{route('single')}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 									</div>
 									<div class="item-info-product">
 										<h4>
-											<a href="single.html">Shuberry Heels </a>
+											<a href="{{route('single')}}">Shuberry Heels </a>
 										</h4>
 										<div class="info-product-price">
 											<div class="grid_meta">
@@ -427,14 +432,14 @@
 										<img src="images/s5.jpg" alt="">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{route('single')}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 									</div>
 									<div class="item-info-product">
 										<h4>
-											<a href="single.html">Red Bellies </a>
+											<a href="{{route('single')}}">Red Bellies </a>
 										</h4>
 										<div class="info-product-price">
 											<div class="grid_meta">
@@ -476,14 +481,14 @@
 										<img src="images/s6.jpg" alt="">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{route('single')}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 									</div>
 									<div class="item-info-product">
 										<h4>
-											<a href="single.html">Catwalk Flats</a>
+											<a href="{{route('single')}}">Catwalk Flats</a>
 										</h4>
 										<div class="info-product-price">
 											<div class="grid_meta">
@@ -527,14 +532,14 @@
 										<img src="images/s7.jpg" alt="">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{route('single')}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 									</div>
 									<div class="item-info-product">
 										<h4>
-											<a href="single.html">Running Shoes</a>
+											<a href="{{route('single')}}">Running Shoes</a>
 										</h4>
 										<div class="info-product-price">
 											<div class="grid_meta">
@@ -576,14 +581,14 @@
 										<img src="images/s8.jpg" alt="">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{route('single')}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 									</div>
 									<div class="item-info-product">
 										<h4>
-											<a href="single.html">Sukun Casuals</a>
+											<a href="{{route('single')}}">Sukun Casuals</a>
 										</h4>
 										<div class="info-product-price">
 											<div class="grid_meta">
@@ -625,14 +630,14 @@
 										<img src="images/s9.jpg" alt="">
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
-												<a href="single.html" class="link-product-add-cart">Quick View</a>
+												<a href="{{route('single')}}" class="link-product-add-cart">Quick View</a>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 									</div>
 									<div class="item-info-product">
 										<h4>
-											<a href="single.html">Bank Sneakers</a>
+											<a href="{{route('single')}}">Bank Sneakers</a>
 										</h4>
 										<div class="info-product-price">
 											<div class="grid_meta">

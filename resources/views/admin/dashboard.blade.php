@@ -11,7 +11,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-4 col-sm-6 col-xs-12">
                 <div class="white-box analytics-info">
-                    <h3 class="box-title">Total Visit</h3>
+                    <h3 class="box-title">Total Bill</h3>
                     <ul class="list-inline two-part d-flex align-items-center mb-0">
                         <li>
                             <div id="sparklinedash"><canvas width="67" height="30"
@@ -24,14 +24,14 @@
             </div>
             <div class="col-lg-4 col-sm-6 col-xs-12">
                 <div class="white-box analytics-info">
-                    <h3 class="box-title">Total Page Views</h3>
+                    <h3 class="box-title">Total Customer</h3>
                     <ul class="list-inline two-part d-flex align-items-center mb-0">
                         <li>
                             <div id="sparklinedash2"><canvas width="67" height="30"
                                     style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
                             </div>
                         </li>
-                        <li class="ml-auto"><span class="counter text-purple">869</span></li>
+                        <li class="ml-auto"><span class="counter text-purple">{{$count_customer}}</span></li>
                     </ul>
                 </div>
             </div>
@@ -50,6 +50,8 @@
                 </div>
             </div>
         </div>
+        
+
         <!-- ============================================================== -->
         <!-- PRODUCTS YEARLY SALES -->
         <!-- ============================================================== -->
@@ -67,11 +69,8 @@
                             </li>
                         </ul>
                     </div>
-                    <div id="ct-visits" style="height: 405px;">
-                        <div class="chartist-tooltip" style="top: -17px; left: -12px;"><span
-                                class="chartist-tooltip-value">6</span>
-                        </div>
-                    </div>
+                    <div id="chart" style="height: 300px;"></div>
+   
                 </div>
             </div>
         </div>
@@ -370,6 +369,22 @@
 <!-- ============================================================== -->
 <!-- End Page wrapper  -->
 <!-- ============================================================== -->
+<script src="https://unpkg.com/chart.js@2.9.3/dist/Chart.min.js"></script>
+	<!-- Chartisan -->
+	<script src="https://unpkg.com/@chartisan/chartjs@^2.1.0/dist/chartisan_chartjs.umd.js"></script>
+    <script>
+      const chart = new Chartisan({
+        el: '#chart',
+        url: "@chart('chart')",
+        hooks: new ChartisanHooks()
+    .beginAtZero()
+    
+    .colors(['#e7f3fb', '#4c5667'])
+    .borderColors(['#2cabe3', '#4c5667'])
+    .datasets([{ type: 'line', fill: true,  },{ type: 'bar', fill: false }]),
+      
+      });
+    </script>
 
 @endsection
         

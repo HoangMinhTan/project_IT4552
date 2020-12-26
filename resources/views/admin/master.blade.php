@@ -75,49 +75,57 @@
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('dashboard')}}"
                                 aria-expanded="false">
                                 <i class="far fa-clock" aria-hidden="true"></i>
-                                <span class="hide-menu">Thống kê</span>
+                                <span class="hide-menu">Dashboard</span>
+                            </a>
+                        </li>
+                        
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('home')}}"
+                                aria-expanded="false">
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                                <span class="hide-menu">Home Page</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('profile')}}"
                                 aria-expanded="false">
                                 <i class="fa fa-user" aria-hidden="true"></i>
-                                <span class="hide-menu">Thông tin cá nhân</span>
+                                <span class="hide-menu">Information</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('account')}}"
                                 aria-expanded="false">
                                 <i class="fa fa-table" aria-hidden="true"></i>
-                                <span class="hide-menu">Quản lý tài khoản</span>
+                                <span class="hide-menu">Account manager</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('storage')}}"
                                 aria-expanded="false">
                                 <i class="fa fa-columns" aria-hidden="true"></i>
-                                <span class="hide-menu">Quản lý kho</span>
+                                <span class="hide-menu">Product manager</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('category')}}"
                                 aria-expanded="false">
                                 <i class="fa fa-info-circle" aria-hidden="true"></i>
-                                <span class="hide-menu">Quản lý loại sản phẩm</span>
+                                <span class="hide-menu">Category manager</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('supplier')}}"
                                 aria-expanded="false">
                                 <i class="fa fa-info-circle" aria-hidden="true"></i>
-                                <span class="hide-menu">Quản lý nhà cung cấp</span>
+                                <span class="hide-menu">Supplier manager</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('bill')}}"
                                 aria-expanded="false">
                                 <i class="fa fa-info-circle" aria-hidden="true"></i>
-                                <span class="hide-menu">Quản lý đơn hàng</span>
+                                <span class="hide-menu">Bill manager</span>
                             </a>
                         </li>
                         
@@ -125,7 +133,7 @@
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('logout')}}"
                                 aria-expanded="false">
                                 <i class="fas fa-sign-out-alt" aria-hidden="true"></i>
-                                <span class="hide-menu">Đăng xuất</span>
+                                <span class="hide-menu">Logout</span>
                             </a>
                         </li>
                     </ul>

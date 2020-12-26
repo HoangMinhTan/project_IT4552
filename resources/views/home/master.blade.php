@@ -47,11 +47,20 @@
 
 					<nav>
 						<ul>
+							@if (Auth::check())
+								@if (Auth::user()->role<2)
+									<li><a href="{{route('dashboard')}}">Dashboard</a></li>
+								@endif 
+							@endif
 							<li><a href="{{route('home')}}" class="active">Home</a></li>
 							<li><a href="{{route('about')}}">About</a></li>
 							<li><a href="{{route('shop')}}">Shop Now</a></li>
 							<li><a href="{{route('contact')}}">Contact</a></li>
-							<li><a href="{{'logout'}}">Logout</a></li>
+							@if (Auth::check())
+								<li><a href="{{'logout'}}">Logout</a></li>
+							@else
+								<li><a href="{{'login'}}">Login</a></li>
+							@endif 
 						</ul>
 					</nav>
 				</div>
@@ -63,7 +72,9 @@
 						<form action="#" method="post" class="last">
 							<input type="hidden" name="cmd" value="_cart">
 							<input type="hidden" name="display" value="1">
-							<button class="top_shoe_cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+							@if(Auth::check())
+								<button class="top_shoe_cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+							@endif
 						</form>
 					</div>
 				</div>
@@ -113,6 +124,7 @@
 		<div class="footer_inner_info_w3ls_agileits">
 			<div class="col-md-3 footer-left">
 				<h2><a href="{{route('home')}}"><span>D</span>owny Shop </a></h2>
+
 				<p>This is a shop.</p>
 				<ul class="social-nav model-3d-0 footer-social social two">
 					<li>

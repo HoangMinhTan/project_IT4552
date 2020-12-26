@@ -14,22 +14,22 @@
             <div class="col-12">
                 <div class="white-box">
                     <div class="col-sm-12">
-                        <h3 class="box-title" style="float:left">Quản lý tài khoản</h3>
+                        <h3 class="box-title" style="float:left">Account manager</h3>
                     </div>
                     <div class="col-sm-12">
-                        <a class="btn btn-success" style="float:right" href="{{route('add_account')}}">Thêm tài khoản</a>
+                        <a class="btn btn-success" style="float:right" href="{{route('add_account')}}">Create account</a>
                     </div>
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
                                 <tr>
                                     <th class="border-top-0">#</th>
-                                    <th class="border-top-0">Họ Và Tên</th>
+                                    <th class="border-top-0">Full Name</th>
                                     <th class="border-top-0">Email</th>
-                                    <th class="border-top-0">Điện thoại</th>
-                                    <th class="border-top-0">Địa chỉ</th>
-                                    <th class="border-top-0">Quyền</th>
-                                    <th class="border-top-0">Ngày tạo</th>
+                                    <th class="border-top-0">Phone</th>
+                                    <th class="border-top-0">Address</th>
+                                    <th class="border-top-0">Role</th>
+                                    <th class="border-top-0">Created at</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -41,17 +41,17 @@
                                     <td>{{$account['phone']}}</td>
                                     <td>{{$account['address']}}</td>
                                     @if ($account['role'] == 0)
-                                        <td>Quản lý</td>
+                                        <td>Manager</td>
                                     @elseif ($account['role'] == 1)
-                                        <td>Nhân viên</td>
+                                        <td>Employee</td>
                                     @else 
-                                        <td>Khách hàng</td>
+                                        <td>Customer</td>
                                     @endif 
 
                                     <td>{{$account['created_at']}}</td>
                                     @if ($user['role'] < $account['role'])
-                                        <td class="center"><a href="account/delete/{{$account['id']}}"><i class="far fa-trash-alt"></i> Xóa</a></td>
-                                        <td class="center"><a href="account/edit/{{$account['id']}}"><i class="fas fa-edit"></i> Sửa</a></td>
+                                        <td class="center"><a href="account/delete/{{$account['id']}}"><i class="far fa-trash-alt"></i> Delete</a></td>
+                                        <td class="center"><a href="account/edit/{{$account['id']}}"><i class="fas fa-edit"></i> Edit</a></td>
                                     @endif
                                     </tr>
                                 @endforeach
