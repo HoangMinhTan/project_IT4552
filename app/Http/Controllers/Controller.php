@@ -7,6 +7,7 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use App\Models\Product;
+use Illuminate\Http\Request;
 
 class Controller extends BaseController
 {
@@ -37,6 +38,15 @@ class Controller extends BaseController
     public function checkout(){
         return view('home.checkout');
     }
+
+    public function Pcheckout(Request $request){
+        for ($i = 1; $i <= $request->total_item; $i++){
+            $products[$i] = Product::where('name', $request->{'shoe_item_'.$i})->first();
+            $quantity[$i] = $request->{'quantity_'.$i};
+        }
+        return view('home.checkout', ['products' => $products, 'quantity' => $quantity, 'total_item' => $request->total_item]);
+    }
+
 
     public function payment(){
         return view('home.payment');

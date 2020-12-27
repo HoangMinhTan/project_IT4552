@@ -225,8 +225,10 @@
 						<div class="col-md-4 product-men">
 							<div class="product-shoe-info shoe">
 								<div class="men-pro-item">
-									<div class="men-thumb-item" style="width: 400px; height: 600px">
-										<img src="images/{{$product->id}}/1.jpg"  alt="">
+									<div class="men-thumb-item" style="height: 600px">
+										<img src="images/{{$product->id}}/1.jpg" style="width: 100%;" alt="">
+										
+										<div class="clearfix"></div>
 										<div class="men-cart-pro">
 											<div class="inner-men-cart-pro">
 												<a href="single/{{$product->id}}" class="link-product-add-cart">Quick View</a>
@@ -257,8 +259,8 @@
 												<form action="#" method="post">
 													<input type="hidden" name="cmd" value="_cart">
 													<input type="hidden" name="add" value="1">
-													<input type="hidden" name="shoe_item" value="Bella Toes">
-													<input type="hidden" name="amount" value="675.00">
+													<input type="hidden" name="shoe_item" value="{{$product->name}}">
+													<input type="hidden" name="amount" value="{{$product->out_price}}">
 													<button type="submit" class="shoe-cart pshoe-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
 
 													<a href="" data-toggle="modal" data-target="#myModal1"></a>

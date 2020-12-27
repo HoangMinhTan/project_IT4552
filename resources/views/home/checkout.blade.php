@@ -21,29 +21,30 @@
 							<tr>
 								<th>SL No.</th>
 								<th>Product</th>
-								<th>Quality</th>
+								<th>Quantity</th>
 								<th>Product Name</th>
 
-								<th>Price</th>
+								<th>Unit Price</th>
 								<th>Remove</th>
 							</tr>
 						</thead>
 						<tbody>
+							@for ($i=1; $i<=$total_item; $i++)
 							<tr class="rem1">
-								<td class="invert">1</td>
-								<td class="invert-image"><a href="single.html"><img src="images/s1.jpg" alt=" " class="img-responsive"></a></td>
+								<td class="invert">{{$i}}</td>
+								<td class="invert-image"><a href="{{route('single', ['id'=>$products[$i]->id])}}"><img src="images/{{$products[$i]->id}}/1.jpg" style="max-width: 185.12px; max-height: 185.12px;" alt=" " class="img-responsive"></a></td>
 								<td class="invert">
 									<div class="quantity">
 										<div class="quantity-select">
 											<div class="entry value-minus">&nbsp;</div>
-											<div class="entry value"><span>1</span></div>
+											<div class="entry value"><span>{{$quantity[$i]}}</span></div>
 											<div class="entry value-plus active">&nbsp;</div>
 										</div>
 									</div>
 								</td>
-								<td class="invert">Bella Toes</td>
+								<td class="invert">{{$products[$i]->name}}</td>
 
-								<td class="invert">$675.00</td>
+								<td class="invert">${{$products[$i]->out_price}}</td>
 								<td class="invert">
 									<div class="rem">
 										<div class="close1"> </div>
@@ -51,50 +52,9 @@
 
 								</td>
 							</tr>
-							<tr class="rem2">
-								<td class="invert">2</td>
-								<td class="invert-image"><a href="single.html"><img src="images/s5.jpg" alt=" " class="img-responsive"></a></td>
-								<td class="invert">
-									<div class="quantity">
-										<div class="quantity-select">
-											<div class="entry value-minus">&nbsp;</div>
-											<div class="entry value"><span>1</span></div>
-											<div class="entry value-plus active">&nbsp;</div>
-										</div>
-									</div>
-								</td>
-								<td class="invert">Red Bellies</td>
-
-								<td class="invert">$325.00</td>
-								<td class="invert">
-									<div class="rem">
-										<div class="close2"> </div>
-									</div>
-
-								</td>
-							</tr>
-							<tr class="rem3">
-								<td class="invert">3</td>
-								<td class="invert-image"><a href="single.html"><img src="images/s2.jpg" alt=" " class="img-responsive"></a></td>
-								<td class="invert">
-									<div class="quantity">
-										<div class="quantity-select">
-											<div class="entry value-minus">&nbsp;</div>
-											<div class="entry value"><span>1</span></div>
-											<div class="entry value-plus active">&nbsp;</div>
-										</div>
-									</div>
-								</td>
-								<td class="invert">Chikku Loafers</td>
-
-								<td class="invert">$405.00</td>
-								<td class="invert">
-									<div class="rem">
-										<div class="close3"> </div>
-									</div>
-
-								</td>
-							</tr>
+							@endfor
+							
+							
 
 						</tbody>
 					</table>
