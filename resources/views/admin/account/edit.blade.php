@@ -53,7 +53,7 @@
                             @elseif ($edit['role']==1)
                             
                             <div class="form-group mb-4">
-                                <label class="col-sm-12">Quyền</label>
+                                <label class="col-sm-12">Role</label>
                                 <div class="col-sm-12 border-bottom">
                                     <select name="role" value="{{$edit['role']}}" class="form-control p-0 border-0">
                                         <option value="0">Manager</option>
@@ -65,7 +65,7 @@
 
                             @else
                             <div class="form-group mb-4">
-                                <label class="col-sm-12">Quyền</label>
+                                <label class="col-sm-12">Role</label>
                                 <div class="col-sm-12 border-bottom">
                                     <select name="role" value="{{$edit['role']}}" class="form-control p-0 border-0">
                                         <option value="0">Manager</option>

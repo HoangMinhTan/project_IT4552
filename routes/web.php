@@ -16,6 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::group(['middleware'=>'login'], function()
 {
     Route::get('logout', 'App\Http\Controllers\LoginController@logout')->name('logout');
+    Route::group(['middleware'=>['web']], function(){
+        Route::get('checkout', 'App\Http\Controllers\Controller@checkout')->name('checkout');
+        Route::post('single/checkout', 'App\Http\Controllers\Controller@Psinglecheckout');
+        Route::post('checkout', 'App\Http\Controllers\Controller@Pcheckout')->name('Pcheckout');
+    });
 });
 
 Route::get('/', 'App\Http\Controllers\Controller@home')->name('home');
@@ -23,8 +28,7 @@ Route::get('shop', 'App\Http\Controllers\Controller@shop')->name('shop');
 Route::get('about', 'App\Http\Controllers\Controller@about')->name('about');
 Route::get('contact', 'App\Http\Controllers\Controller@contact')->name('contact');
 Route::get('single/{id}', 'App\Http\Controllers\Controller@single')->name('single');
-Route::get('checkout', 'App\Http\Controllers\Controller@checkout')->name('checkout');
-Route::post('checkout', 'App\Http\Controllers\Controller@Pcheckout');
+
 Route::get('payment', 'App\Http\Controllers\Controller@payment')->name('payment');
 
 Route::group(['middleware' => 'admin'], function()

@@ -58,9 +58,9 @@
 							<li><a href="{{route('shop')}}">Shop Now</a></li>
 							<li><a href="{{route('contact')}}">Contact</a></li>
 							@if (Auth::check())
-								<li><a href="{{'logout'}}">Logout</a></li>
+								<li><a href="{{route('logout')}}">Logout</a></li>
 							@else
-								<li><a href="{{'login'}}">Login</a></li>
+								<li><a href="{{route('login')}}">Login</a></li>
 							@endif 
 						</ul>
 					</nav>

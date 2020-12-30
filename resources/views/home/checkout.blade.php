@@ -30,7 +30,7 @@
 						</thead>
 						<tbody>
 							@for ($i=1; $i<=$total_item; $i++)
-							<tr class="rem1">
+							<tr class="rem">
 								<td class="invert">{{$i}}</td>
 								<td class="invert-image"><a href="{{route('single', ['id'=>$products[$i]->id])}}"><img src="images/{{$products[$i]->id}}/1.jpg" style="max-width: 185.12px; max-height: 185.12px;" alt=" " class="img-responsive"></a></td>
 								<td class="invert">
@@ -266,26 +266,8 @@
 <script>
 	$(document).ready(function (c) {
 		$('.close1').on('click', function (c) {
-			$('.rem1').fadeOut('slow', function (c) {
-				$('.rem1').remove();
-			});
-		});
-	});
-</script>
-<script>
-	$(document).ready(function (c) {
-		$('.close2').on('click', function (c) {
-			$('.rem2').fadeOut('slow', function (c) {
-				$('.rem2').remove();
-			});
-		});
-	});
-</script>
-<script>
-	$(document).ready(function (c) {
-		$('.close3').on('click', function (c) {
-			$('.rem3').fadeOut('slow', function (c) {
-				$('.rem3').remove();
+			$(this).parent().parent().parent().first().fadeOut('slow', function (c) {
+				$(this).remove();
 			});
 		});
 	});

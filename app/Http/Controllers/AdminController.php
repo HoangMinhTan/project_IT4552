@@ -90,7 +90,7 @@ class AdminController extends Controller
         $user->phone = $request->phone;
         $user->address = $request->address;
         $user->save();
-        return redirect('profile')->with('thongbao', 'Cập nhật thông tin thành công');
+        return redirect('profile')->with('thongbao', 'update successed!');
     }
 
     

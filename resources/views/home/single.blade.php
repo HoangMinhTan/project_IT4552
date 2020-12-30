@@ -62,6 +62,7 @@
 				</div>
 				<div class="occasion-cart">
 					<div class="shoe single-item single_page_b">
+						@if (Auth::check())
 						<form action="#" method="post">
 							<input type="hidden" name="cmd" value="_cart">
 							<input type="hidden" name="add" value="1">
@@ -71,6 +72,10 @@
 
 							<a href="#" data-toggle="modal" data-target="#myModal1"></a>
 						</form>
+
+						@else 
+							<a href="{{route('login')}}"><input type="submit" name="submit" value="Add to cart" class="button add"></a>
+						@endif
 
 					</div>
 
