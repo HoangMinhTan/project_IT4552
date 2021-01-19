@@ -58,15 +58,15 @@
         <div class="row">
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                 <div class="white-box">
-                    <h3 class="box-title">Products Yearly Sales</h3>
+                    <h3 class="box-title">Account</h3>
                     <div class="d-md-flex">
                         <ul class="list-inline d-flex ml-auto">
-                            <li class="pl-3">
+                            {{-- <li class="pl-3">
                                 <h5><i class="fa fa-circle m-r-5 text-info"></i>Mac</h5>
                             </li>
                             <li class="pl-3">
                                 <h5><i class="fa fa-circle m-r-5 text-inverse"></i>Windows</h5>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>
                     <div id="chart" style="height: 300px;"></div>

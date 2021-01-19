@@ -256,7 +256,6 @@
 												</ul>
 											</div>
 											<div class="shoe single-item hvr-outline-out">
-												@if (Auth::check())
 												<form action="#" method="post">
 													<input type="hidden" name="cmd" value="_cart">
 													<input type="hidden" name="add" value="1">
@@ -266,10 +265,6 @@
 
 													<a href="" data-toggle="modal" data-target="#myModal1"></a>
 												</form>
-												@else 
-
-													<a href="{{route('login')}}"><button type="submit" class="shoe-cart pshoe-cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></button></a>
-												@endif
 
 											</div>
 										</div>

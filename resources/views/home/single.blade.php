@@ -33,8 +33,7 @@
 			</div>
 			<div class="col-md-8 single-right-left simpleCart_shelfItem">
 				<h3>{{$single->name}}</h3>
-				<p><span class="item_price">$650</span>
-					<del>${{$single->out_price}}</del>
+				<p><span class="item_price">${{$single->out_price}}</span>
 				</p>
 				<div class="rating1">
 					<ul class="stars">
@@ -47,19 +46,7 @@
 				</div>
 				
 				
-				<div class="occasional">
-					<h5>Types :</h5>
-					<div class="colr ert">
-						<label class="radio"><input type="radio" name="radio" checked=""><i></i>Casual Shoes</label>
-					</div>
-					<div class="colr">
-						<label class="radio"><input type="radio" name="radio"><i></i>Sneakers </label>
-					</div>
-					<div class="colr">
-						<label class="radio"><input type="radio" name="radio"><i></i>Formal Shoes</label>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
+				
 				<div class="occasion-cart">
 					<div class="shoe single-item single_page_b">
 						@if (Auth::check())
