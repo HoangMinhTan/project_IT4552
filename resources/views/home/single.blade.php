@@ -36,13 +36,22 @@
 				<p><span class="item_price">${{$single->out_price}}</span>
 				</p>
 				<div class="rating1">
+					{{--Start Rating--}}
 					<ul class="stars">
-						<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
-					</ul>
+						@for ($i = 0; $i < 5; $i++)
+							@if (floor($single->rate) - $i >= 1)
+								{{--Full Start--}}
+							<li><a href="{{$single->id}}/{{$i+1}}"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+							@elseif ($single->rate - $i > 0)
+								{{--Half Start--}}
+							<li><a href="{{$single->id}}/{{$i+1}}"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+							@else
+								{{--Empty Start--}}
+							<li><a href="{{$single->id}}/{{$i+1}}"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+							@endif
+						@endfor
+						</ul>
+						{{--End Rating--}}
 				</div>
 				
 				
@@ -97,67 +106,7 @@
 
 			</div>
 			<div class="clearfix"> </div>
-			<!--/tabs-->
-			<div class="responsive_tabs">
-				<div id="horizontalTab">
-					<ul class="resp-tabs-list">
-						<li>Description</li>
-						<li>Reviews</li>
-						<li>Information</li>
-					</ul>
-					<div class="resp-tabs-container">
-						<!--/tab_one-->
-						<div class="tab1">
-
-							<div class="single_page">
-								<h6>Page 1</h6>
-								<p>Page 2</p>
-								<p class="para">Page 3</p>
-							</div>
-						</div>
-						<!--//tab_one-->
-						<div class="tab2">
-
-							<div class="single_page">
-								<div class="bootstrap-tab-text-grids">
-									<div class="bootstrap-tab-text-grid">
-										<div class="bootstrap-tab-text-grid-left">
-											<img src="../images/t1.jpg" alt=" " class="img-responsive">
-										</div>
-										<div class="bootstrap-tab-text-grid-right">
-											<ul>
-												<li><a href="#">Admin</a></li>
-												<li><a href="#"><i class="fa fa-reply-all" aria-hidden="true"></i> Reply</a></li>
-											</ul>
-											<p>Page 4</p>
-										</div>
-										<div class="clearfix"> </div>
-									</div>
-									<div class="add-review">
-										<h4>add a review</h4>
-										<form action="#" method="post">
-											<input type="text" name="Name" required="Name">
-											<input type="email" name="Email" required="Email">
-											<textarea name="Message" required=""></textarea>
-											<input type="submit" value="SEND">
-										</form>
-									</div>
-								</div>
-
-							</div>
-						</div>
-						<div class="tab3">
-
-							<div class="single_page">
-								<h6>Shoe Rock Vision(SRV) Sneakers (Blue)</h6>
-								<p>A Sneaker shoes</p>
-								<p class="para">Just Buy It</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--//tabs-->
+			
 			<!-- /new_arrivals -->
 			<div class="new_arrivals">
 				<h3>Featured Products</h3>

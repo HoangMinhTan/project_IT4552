@@ -61,7 +61,7 @@
 						<span class="txt1">
 							Not have account?
 						</span>
-						<a class="txt2" href="">
+						<a class="txt2" href="{{route('register')}}">
 							Register
 						</a>
 					</div>

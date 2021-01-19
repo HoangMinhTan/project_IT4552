@@ -26,10 +26,12 @@ Route::get('shop', 'App\Http\Controllers\Controller@shop')->name('shop');
 Route::get('about', 'App\Http\Controllers\Controller@about')->name('about');
 Route::get('contact', 'App\Http\Controllers\Controller@contact')->name('contact');
 Route::get('single/{id}', 'App\Http\Controllers\Controller@single')->name('single');
+Route::get('single/{id}/{rate}', 'App\Http\Controllers\Controller@rate')->name('rate');
 Route::get('checkout', 'App\Http\Controllers\Controller@checkout')->name('checkout');
 Route::post('single/checkout', 'App\Http\Controllers\Controller@Psinglecheckout');
 Route::post('checkout', 'App\Http\Controllers\Controller@Pcheckout')->name('Pcheckout');
 Route::post('payment', 'App\Http\Controllers\Controller@Ppayment')->name('Ppayment');
+Route::get('search_rate/{rate}','App\Http\Controllers\Controller@search_rate')->name('search_rate');
 
 Route::get('payment', 'App\Http\Controllers\Controller@payment')->name('payment');
 

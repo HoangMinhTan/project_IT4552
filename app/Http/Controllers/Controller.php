@@ -8,9 +8,11 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use App\Models\Product;
 use Illuminate\Http\Request;
-
+use Auth;
+use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 use Session;
+use App\Models\Category;
 
 class Controller extends BaseController
 {
@@ -22,7 +24,20 @@ class Controller extends BaseController
 
     public function shop(){
         $products = Product::paginate(9);
-        return view('home.shop', ['products'=> $products]);
+        $category = Category::all();
+        foreach ($products as $product)
+        {
+            $rate = 0;
+            $counts = DB::table('rate')->where('product_id', $product->id)->get();
+            foreach ($counts as $count){
+                $rate+=$count->rate;
+            }
+            if (count($counts)!=0)
+                $rate = $rate/count($counts);
+            else $rate = 0;
+            $product->rate = $rate;
+        }
+        return view('home.shop', ['products'=> $products, 'categories'=>$category]);
     }
 
     public function about(){
@@ -35,6 +50,15 @@ class Controller extends BaseController
 
     public function single($id){
         $single = Product::find($id);
+        $rate =0;
+        $counts = DB::table('rate')->where('product_id', $single->id)->get();
+        foreach ($counts as $count){
+            $rate+=$count->rate;
+        }
+        if (count($counts)!=0)
+            $rate = $rate/count($counts);
+        else $rate = 0;
+        $single->rate = $rate;
         return view('home.single', ['single' => $single]);
     }
 
@@ -129,4 +153,26 @@ class Controller extends BaseController
     public function payment(){
         return view('home.payment');
     }
+
+
+    public function rate($id, $rate){
+        $user = Auth::user();
+        $product = DB::table('product')->where('id', $id)->first();
+        $rating = DB::table('rate')->where('user_id', $user->id)->where('product_id', $product->id)->first();
+        if ($rating == null)
+        {
+            \DB::table('rate')->insert([
+                'user_id'=>$user->id,
+                'product_id'=>$product->id,
+                'rate'=>$rate
+            ]);
+        }
+        else
+        {
+            DB::table('rate')->where('user_id', $user->id)->where('product_id', $product->id)->update(['rate' => $rate]);
+        }
+        return redirect()->back();
+    }
+
+    
 }

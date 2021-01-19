@@ -33,4 +33,5 @@ class Product extends Model
     {
         return $this->belongsTo(Detail_bill::class);
     }
+
 }

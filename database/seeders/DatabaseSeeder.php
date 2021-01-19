@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
         $this->call(ProductSeeder::class);
         $this->call(BillSeeder::class);
         $this->call(DetailBillSeeder::class);
-
+        $this->call(RateSeeder::class);
         // \DB::table('product')->insert([
         //     'name'=> "alsdf",
         //     'quantity' => 1,

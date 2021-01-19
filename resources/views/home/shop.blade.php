@@ -33,71 +33,30 @@
 						<li>
 
 							<div id="slider-range"></div>
-							<input type="text" id="amount" style="border: 0; color: #ffffff; font-weight: normal;" />
+							<input type="text" id="amount" name="range" style="border: 0; color: #ffffff; font-weight: normal;" />
 						</li>
 					</ul>
 				</div>
 				<!-- //price range -->
 				<!--preference -->
 				<div class="left-side">
-					<h3 class="agileits-sear-head">Occasion</h3>
+					<h3 class="agileits-sear-head">Category</h3>
 					<ul>
+						@foreach ($categories as $category)
 						<li>
 							<input type="checkbox" class="checked">
-							<span class="span">Casuals</span>
+							<span class="span">{{$category->category}}</span>
 						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">Party</span>
-						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">Wedding</span>
-						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">Ethnic</span>
-						</li>
+						@endforeach
 					</ul>
 				</div>
 				<!-- // preference -->
-				<!-- discounts -->
-				<div class="left-side">
-					<h3 class="agileits-sear-head">Discount</h3>
-					<ul>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">5% or More</span>
-						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">10% or More</span>
-						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">20% or More</span>
-						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">30% or More</span>
-						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">50% or More</span>
-						</li>
-						<li>
-							<input type="checkbox" class="checked">
-							<span class="span">60% or More</span>
-						</li>
-					</ul>
-				</div>
-				<!-- //discounts -->
 				<!-- reviews -->
 				<div class="customer-rev left-side">
 					<h3 class="agileits-sear-head">Customer Review</h3>
 					<ul>
 						<li>
-							<a href="#">
+							<a href="search_rate/50">
 								<i class="fa fa-star" aria-hidden="true"></i>
 								<i class="fa fa-star" aria-hidden="true"></i>
 								<i class="fa fa-star" aria-hidden="true"></i>
@@ -107,7 +66,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="search_rate/40">
 								<i class="fa fa-star" aria-hidden="true"></i>
 								<i class="fa fa-star" aria-hidden="true"></i>
 								<i class="fa fa-star" aria-hidden="true"></i>
@@ -117,17 +76,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#">
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star-half-o" aria-hidden="true"></i>
-								<i class="fa fa-star-o" aria-hidden="true"></i>
-								<span>3.5</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
+							<a href="search_rate/30">
 								<i class="fa fa-star" aria-hidden="true"></i>
 								<i class="fa fa-star" aria-hidden="true"></i>
 								<i class="fa fa-star" aria-hidden="true"></i>
@@ -137,78 +86,29 @@
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="search_rate/20">
 								<i class="fa fa-star" aria-hidden="true"></i>
 								<i class="fa fa-star" aria-hidden="true"></i>
-								<i class="fa fa-star-half-o" aria-hidden="true"></i>
 								<i class="fa fa-star-o" aria-hidden="true"></i>
 								<i class="fa fa-star-o" aria-hidden="true"></i>
-								<span>2.5</span>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+								<span>2.0</span>
+							</a>
+						</li>
+						<li>
+							<a href="search_rate/10">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+								<span>1.0</span>
 							</a>
 						</li>
 					</ul>
 				</div>
 				<!-- //reviews -->
-				<!-- deals -->
-				<div class="deal-leftmk left-side">
-					<h3 class="agileits-sear-head">Special Deals</h3>
-					<div class="special-sec1">
-						<div class="col-xs-4 img-deals">
-							<img src="images/s4.jpg" alt="">
-						</div>
-						<div class="col-xs-8 img-deal1">
-
-							<h3>Adidas Hoodie</h3>
-							<a href="single.html">$180.00</a>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="special-sec1">
-						<div class="col-xs-4 img-deals">
-							<img src="images/s2.jpg" alt="">
-						</div>
-						<div class="col-xs-8 img-deal1">
-
-							<h3>Chikku Jeans</h3>
-							<a href="single.html">$99.00</a>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="special-sec1">
-						<div class="col-xs-4 img-deals">
-							<img src="images/s1.jpg" alt="">
-						</div>
-						<div class="col-xs-8 img-deal1">
-
-							<h3>White T-shirt</h3>
-							<a href="single.html">$165.00</a>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="special-sec1">
-						<div class="col-xs-4 img-deals">
-							<img src="images/s5.jpg" alt="">
-						</div>
-						<div class="col-xs-8 img-deal1">
-
-							<h3>Yellow T-shirt</h3>
-							<a href="single.html">$225.00</a>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="special-sec1">
-						<div class="col-xs-4 img-deals">
-							<img src="images/s3.jpg" alt="">
-						</div>
-						<div class="col-xs-8 img-deal1">
-
-							<h3>SRV Jeans</h3>
-							<a href="single.html">$169.00</a>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-				<!-- //deals -->
+				
 
 			</div>
 			<!-- //product left -->
@@ -244,16 +144,27 @@
 											<div class="grid_meta">
 												<div class="product_price">
 													<div class="grid-price ">
-														<span class="money ">$675.00</span>
+														<span class="money ">${{$product->out_price}}</span>
 													</div>
 												</div>
+												<div id="rate" style="visibility: hidden">{{$product->rate}}</div>
+
+												{{--Start Rating--}}
 												<ul class="stars">
+												@for ($i = 0; $i < 5; $i++)
+													@if (floor($product->rate) - $i >= 1)
+														{{--Full Start--}}
 													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+													@elseif ($product->rate - $i > 0)
+														{{--Half Start--}}
 													<li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+													@else
+														{{--Empty Start--}}
 													<li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+													@endif
+												@endfor
 												</ul>
+												{{--End Rating--}}
 											</div>
 											<div class="shoe single-item hvr-outline-out">
 												<form action="#" method="post">
@@ -387,3 +298,7 @@
 	
 
 	@endsection
+
+	<script>
+		
+	</script>

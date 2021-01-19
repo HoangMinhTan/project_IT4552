@@ -16,6 +16,7 @@ class RegisterController extends Controller
             \DB::table('users')->insert([
                 'name' => 'admin',
                 'email' => $request['email'],
+                'role'=>2,
                 'password' => bcrypt($request['pass'])
             ]);
             return redirect('login');
