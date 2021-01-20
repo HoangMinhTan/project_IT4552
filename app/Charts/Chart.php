@@ -20,14 +20,25 @@ class Chart extends BaseChart
     public function handler(Request $request): Chartisan
     {
         $array=[0,0,0,0,0,0,0,0,0,0,0,0];
+        $array2= [0,0,0,0,0,0,0,0,0,0,0,0];
         $count_customer = DB::table('users')->where('role',2)->get();
         foreach ($count_customer as $key)
         {
             $month= Carbon::parse($key->created_at)->month;
             $array[$month-1]++;
         }
+        $count_bill = DB::table('bill')->get();
+        foreach($count_bill as $key){
+            $bill = Carbon::parse($key->created_at);
+            if ($bill->year == Carbon::now()->year)
+            {
+                $month = $bill->month;
+                $array2[$month-1]++;
+            }
+        }
         return Chartisan::build()
             ->labels(['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'])
-            ->dataset('Sample', $array);
+            ->dataset('Bill', $array2)
+            ->dataset('Account', $array);
     }
 }

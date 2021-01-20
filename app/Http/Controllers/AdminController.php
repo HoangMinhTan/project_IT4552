@@ -14,7 +14,13 @@ class AdminController extends Controller
         $user = Auth::user();
         $count_customer = DB::table('users')->where('role',2)->count();
         $count_bill = DB::table('bill')->count();
-        return view('admin.dashboard', ['user' => $user, 'count_customer'=>$count_customer, 'count_bill' => $count_bill]);
+        $count_product=0;
+        $products = DB::table('product')->get();
+        foreach($products as $product){
+            $count_product += $product->quantity;
+        }
+
+        return view('admin.dashboard', ['user' => $user, 'count_customer'=>$count_customer, 'count_bill' => $count_bill, 'count_product' =>$count_product]);
     }
 
     public function profile(){

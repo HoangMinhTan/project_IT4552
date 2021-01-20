@@ -44,7 +44,7 @@
                                     style="display: inline-block; width: 67px; height: 30px; vertical-align: top;"></canvas>
                             </div>
                         </li>
-                        <li class="ml-auto"><span class="counter text-info">911</span>
+                        <li class="ml-auto"><span class="counter text-info">{{$count_product}}</span>
                         </li>
                     </ul>
                 </div>

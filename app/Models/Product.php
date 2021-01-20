@@ -8,6 +8,7 @@ use App\Models\Category;
 use App\Models\Supplier;
 use App\Models\Detail_bill;
 use App\Models\Manufacturer;
+use App\Models\Import;
 
 class Product extends Model
 {
@@ -32,6 +33,11 @@ class Product extends Model
     public function detail()
     {
         return $this->belongsTo(Detail_bill::class);
+    }
+
+    public function import()
+    {
+        return $this->hasMany(Import::class, 'product_id', 'id');
     }
 
 }

@@ -9,7 +9,7 @@
                     <div class="col-sm-12">
                         <div class="white-box">
                             <div class="col-sm-12">
-                                <h3 class="box-title" style="float:left">Bill manager</h3>
+                                <h3 class="box-title" style="float:left">Import manager</h3>
                             </div>
                             <div class="col-sm-12">
                                 <a class="btn btn-success" style="float:right" href="{{route('add_import')}}">Add import</a>
@@ -22,19 +22,22 @@
                                             <th class="border-top-0">Product</th>
                                             <th class="border-top-0">Supplier</th>
                                             <th class="border-top-0">Quantity</th>
+                                            <th class="border-top-0">Price</th>
                                             <th class="border-top-0">Time</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {{-- @foreach($bills as $bill)
+                                        @foreach($imports as $import)
                                         <tr>
-                                            <td>{{$bill->id}}</td>
-                                            <td>{{$bill->user->name}}</td>
-                                            <td>${{$bill->total}}</td>
-                                            <td>{{$bill->created_at}}</td>
-                                            <td class="center"><a href="bill/detail/{{$bill->id}}"><i class="fas fa-info-circle"></i> Detail</a></td>
+                                            <td>{{$import->id}}</td>
+                                            <td>{{$import->product->name}}</td>
+                                            <td>{{$import->supplier->supplier}}</td>
+                                            <td>{{$import->quantity}}</td>
+                                            <td>${{$import->in_price}}</td>
+                                            <td>{{$import->created_at}}</td>
+                                            {{-- <td class="center"><a href="bill/detail/{{$bill->id}}"><i class="fas fa-info-circle"></i> Detail</a></td> --}}
                                         </tr>
-                                        @endforeach --}}
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>
