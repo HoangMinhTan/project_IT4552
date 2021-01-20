@@ -2,7 +2,7 @@
 
 @section('service')
 	<ul class="short">
-		<li><a href="index.html">Home</a><i>|</i></li>
+		<li><a href="{{route('home')}}">Home</a><i>|</i></li>
 		<li>Check Out</li>
 	</ul>
 @endsection
@@ -53,6 +53,7 @@
 									</div>
 
 								</td>
+								<td class="max" style="visibility: hidden">{{$products[$i]->quantity}}</td>
 							</tr>
 							@endfor
 							<tr class="rem">
@@ -456,8 +457,10 @@
 
 		
 		$('.value-plus').on('click', function (c) {
+			var max = parseInt($(this).parent().parent().parent().parent().first().find('.max').text());
 			var count = parseInt($(this).parent().parent().parent().parent().first().find('.value').text());
-			//if (count ==1 ) return;
+		
+			if (max <= count) $(this)[0].style.visibility="hidden";
 			var unit = parseInt($(this).parent().parent().parent().parent().first().find('.unit').text().substr(1));
 			var sub = count*unit;
 			$(this).parent().parent().parent().parent().first().find('.sub').text('$'+ count*unit);
@@ -467,8 +470,9 @@
 		});
 
 		$('.value-minus').on('click', function (c) {
+			var max = parseInt($(this).parent().parent().parent().parent().first().find('.max').text());
 			var count = parseInt($(this).parent().parent().parent().parent().first().find('.value').text());
-			//if (count == 1) return;
+			$(this).closest('.quantity-select').first().find('.value-plus')[0].style.visibility = "";
 			var unit = parseInt($(this).parent().parent().parent().parent().first().find('.unit').text().substr(1));
 			var sub = count*unit;
 			$(this).parent().parent().parent().parent().first().find('.sub').text('$'+ count*unit);

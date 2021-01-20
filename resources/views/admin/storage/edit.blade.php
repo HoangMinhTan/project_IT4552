@@ -34,7 +34,7 @@
                                     <select class="form-control p-0 border-0" name="manufacturer_id">
                                         @foreach ($manufacturers as $manufacturer)
                                             @if ($manufacturer->id == $edit->manufacturer_id)
-                                                <option value={{$supplier->id}} selected>{{$supplier->manufacturer}}</option>
+                                                <option value={{$manufacturer->id}} selected>{{$manufacturer->manufacturer}}</option>
                                             @else 
                                                 <option value={{$manufacturer->id}}>{{$manufacturer->manufacturer}}</option>
                                             @endif

@@ -7,6 +7,7 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use App\Models\Product;
+use App\Models\Rate;
 use Illuminate\Http\Request;
 use Auth;
 use Illuminate\Support\Facades\DB;
@@ -25,17 +26,9 @@ class Controller extends BaseController
     public function shop(){
         $products = Product::paginate(9);
         $category = Category::all();
-        foreach ($products as $product)
-        {
-            $rate = 0;
-            $counts = DB::table('rate')->where('product_id', $product->id)->get();
-            foreach ($counts as $count){
-                $rate+=$count->rate;
-            }
-            if (count($counts)!=0)
-                $rate = $rate/count($counts);
-            else $rate = 0;
-            $product->rate = $rate;
+        foreach ($products as $product){
+            $count = DB::table('rate')->where('product_id', $product->id)->count();
+            $product->count = $count;
         }
         return view('home.shop', ['products'=> $products, 'categories'=>$category]);
     }
@@ -50,16 +43,9 @@ class Controller extends BaseController
 
     public function single($id){
         $single = Product::find($id);
-        $rate =0;
-        $counts = DB::table('rate')->where('product_id', $single->id)->get();
-        foreach ($counts as $count){
-            $rate+=$count->rate;
-        }
-        if (count($counts)!=0)
-            $rate = $rate/count($counts);
-        else $rate = 0;
-        $single->rate = $rate;
-        return view('home.single', ['single' => $single]);
+        $review = Rate::where('product_id', $id)->get();
+        $count = DB::table('rate')->where('product_id', $single->id)->count();
+        return view('home.single', ['single' => $single, 'count' => $count, 'reviews' => $review]);
     }
 
     public function checkout(){
@@ -121,6 +107,7 @@ class Controller extends BaseController
         }
 
 
+
         \DB::table('bill')->insert([
             'user_id' => $user->id,
             'total' => $request->total,
@@ -131,7 +118,7 @@ class Controller extends BaseController
         for ( $i = 0 ; $i<$request->len; $i++)
         {
             $product = \DB::table('product')->where('name',$request->{'product'.$i})->first();
-            echo $product->id;
+            if ($product->quantity < $request->{'quantity'.$i}) return redirect('shop');
             \DB::table('detail_bill')->insert([
                 'bill_id' => $bill->id,
                 'product_id' => $product->id,
@@ -140,10 +127,12 @@ class Controller extends BaseController
                 'total' => $request->{'quantity'.$i}*($product->out_price),
                 'created_at' => $bill->created_at
             ]);
+            echo ($product->quantity - $request->{'quantity'.$i});
+            \DB::table('product')->where('name',$request->{'product'.$i})->update(['quantity'=> ($product->quantity - $request->{'quantity'.$i})]);
         }
 
 
-        return redirect('/');
+        return redirect('shop');
 
 
         
@@ -158,21 +147,63 @@ class Controller extends BaseController
     public function rate($id, $rate){
         $user = Auth::user();
         $product = DB::table('product')->where('id', $id)->first();
-        $rating = DB::table('rate')->where('user_id', $user->id)->where('product_id', $product->id)->first();
-        if ($rating == null)
+        $bought = DB::table('bill')
+                        ->join('detail_bill', 'detail_bill.bill_id', '=', 'bill.id')
+                        ->where('bill.user_id', $user->id)
+                        ->where('detail_bill.product_id', $id)
+                        ->first();
+        if ($bought != null)
         {
-            \DB::table('rate')->insert([
-                'user_id'=>$user->id,
-                'product_id'=>$product->id,
-                'rate'=>$rate
-            ]);
+            $rating = DB::table('rate')->where('user_id', $user->id)->where('product_id', $product->id)->first();
+            if ($rating == null)
+            {
+                \DB::table('rate')->insert([
+                    'user_id'=>$user->id,
+                    'product_id'=>$product->id,
+                    'rate'=>$rate
+                ]);
+            }
+            else
+            {
+                DB::table('rate')->where('user_id', $user->id)->where('product_id', $product->id)->update(['rate' => $rate]);
+            }
         }
-        else
-        {
-            DB::table('rate')->where('user_id', $user->id)->where('product_id', $product->id)->update(['rate' => $rate]);
+        //Tinh toan rate
+        $rate =0;
+        $counts = DB::table('rate')->where('product_id', $id)->get();
+        foreach ($counts as $count){
+            $rate+=$count->rate;
+        }
+        if (count($counts)!=0)
+            $rate = $rate/count($counts);
+        else $rate = 0;
+
+        //Luu vao DB
+        DB::table('product')->where('id', $id)->update(['rate' => $rate]);
+        return redirect()->back();
+    }
+
+    public function review(Request $request){
+        $user = Auth::user();
+        $review = Rate::where('user_id', $user->id)->where('product_id', $request->product_id)->first();
+        if ($review == null){
+            
+        }
+        else{
+            $review->review = $request->Message;
+            $review->save();
         }
         return redirect()->back();
     }
 
-    
+    public function search_rate($rate){
+        $rate = $rate/10;
+        $products = DB::table('product')->where('rate','>=', $rate)->paginate(9);
+        $category = Category::all();
+        foreach ($products as $product){
+            $count = DB::table('rate')->where('product_id', $product->id)->count();
+            $product->count = $count;
+        }
+        return view('home.shop', ['products'=> $products, 'categories'=>$category]);
+    }
 }

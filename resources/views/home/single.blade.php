@@ -35,7 +35,7 @@
 				<h3>{{$single->name}}</h3>
 				<p><span class="item_price">${{$single->out_price}}</span>
 				</p>
-				<div class="rating1">
+				<div class="rating1" style="margin-bottom: 31px;">
 					{{--Start Rating--}}
 					<ul class="stars">
 						@for ($i = 0; $i < 5; $i++)
@@ -50,9 +50,13 @@
 							<li><a href="{{$single->id}}/{{$i+1}}"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
 							@endif
 						@endfor
-						</ul>
-						{{--End Rating--}}
+						
+						<span>({{$count}} votes)</span>
+					</ul>
+					{{--End Rating--}}
 				</div>
+
+				<p>{{$single->quantity}} products available</p>
 				
 				
 				
@@ -106,6 +110,76 @@
 
 			</div>
 			<div class="clearfix"> </div>
+
+							<!--/tabs-->
+							<div class="responsive_tabs">
+								<div id="horizontalTab">
+									<ul class="resp-tabs-list">
+										<li>Description</li>
+										<li>Reviews</li>
+									</ul>
+									<div class="resp-tabs-container">
+										<!--/tab_one-->
+										<div class="tab1">
+				
+											<div class="single_page">
+												
+												<p class="para">{{$single->note}}</p>
+											</div>
+										</div>
+										<!--//tab_one-->
+										<div class="tab2">
+				
+											<div class="single_page">
+												<div class="bootstrap-tab-text-grids">
+													@foreach ($reviews as $review)
+													@if ($review->review != null)
+													<div class="bootstrap-tab-text-grid">
+														<div class="bootstrap-tab-text-grid-left" style="text-align: center;">
+															<ul class="stars" >
+																@for ($i = 0; $i < 5; $i++)
+																	@if (floor($review->rate) - $i >= 1)
+																		{{--Full Start--}}
+																	<li><i class="fa fa-star" aria-hidden="true"></i></li>
+																	@elseif ($review->rate - $i > 0)
+																		{{--Half Start--}}
+																	<li><i class="fa fa-star-half-o" aria-hidden="true"></i></li>
+																	@else
+																		{{--Empty Start--}}
+																	<li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+																	@endif
+																@endfor
+																
+															</ul>
+														</div>
+														<div class="bootstrap-tab-text-grid-right">
+															<ul>
+																<li><a href="#">{{$review->user->name}}</a></li>
+															</ul>
+															<p>{{$review->review}}</p>
+														</div>
+														<div class="clearfix"> </div>
+													</div>
+													<hr>
+													@endif
+													@endforeach
+													<div class="add-review">
+														<h4>add a review</h4>
+														<form action="{{'review'}}" method="post">
+															<input type="hidden" name="_token" value="{{csrf_token()}}">
+															<input type="hidden" name="product_id" value="{{$single->id}}">
+															<textarea name="Message" required=""></textarea>
+															<input type="submit" value="SEND">
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<!--//tabs-->
 			
 			<!-- /new_arrivals -->
 			<div class="new_arrivals">

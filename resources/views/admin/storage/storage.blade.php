@@ -23,7 +23,7 @@
                                             <th class="border-top-0">Quantity</th>
                                             <th class="border-top-0">Category</th>
                                             <th class="border-top-0">Manufacturer</th>
-                                            <th class="border-top-0">Unit buying price</th>
+                                            <th class="border-top-0">Rating</th>
                                             <th class="border-top-0">Unit selling price</th>
                                             <th class="border-top-0">Note</th>
                                         </tr>
@@ -36,7 +36,7 @@
                                             <td>{{$product->quantity}}</td>
                                             <td>{{$product->category->category}}</td>
                                             <td>{{$product->manufacturer->manufacturer}}</td>
-                                            <td>${{$product->in_price}}</td>
+                                            <td>{{$product->rate}}</td>
                                             <td>${{$product->out_price}}</td>
                                             <td>{{$product->note}}</td>
                                             <td class="center"><a href="storage/delete/{{$product['id']}}"><i class="far fa-trash-alt"></i> Delete</a></td>

@@ -56,7 +56,7 @@
 					<h3 class="agileits-sear-head">Customer Review</h3>
 					<ul>
 						<li>
-							<a href="search_rate/50">
+							<a href="search_rate_50">
 								<i class="fa fa-star" aria-hidden="true"></i>
 								<i class="fa fa-star" aria-hidden="true"></i>
 								<i class="fa fa-star" aria-hidden="true"></i>
@@ -66,7 +66,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="search_rate/40">
+							<a href="search_rate_40">
 								<i class="fa fa-star" aria-hidden="true"></i>
 								<i class="fa fa-star" aria-hidden="true"></i>
 								<i class="fa fa-star" aria-hidden="true"></i>
@@ -76,7 +76,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="search_rate/30">
+							<a href="search_rate_30">
 								<i class="fa fa-star" aria-hidden="true"></i>
 								<i class="fa fa-star" aria-hidden="true"></i>
 								<i class="fa fa-star" aria-hidden="true"></i>
@@ -86,7 +86,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="search_rate/20">
+							<a href="search_rate_20">
 								<i class="fa fa-star" aria-hidden="true"></i>
 								<i class="fa fa-star" aria-hidden="true"></i>
 								<i class="fa fa-star-o" aria-hidden="true"></i>
@@ -96,7 +96,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="search_rate/10">
+							<a href="search_rate_10">
 								<i class="fa fa-star" aria-hidden="true"></i>
 								<i class="fa fa-star-o" aria-hidden="true"></i>
 								<i class="fa fa-star-o" aria-hidden="true"></i>
@@ -151,18 +151,19 @@
 
 												{{--Start Rating--}}
 												<ul class="stars">
-												@for ($i = 0; $i < 5; $i++)
-													@if (floor($product->rate) - $i >= 1)
-														{{--Full Start--}}
-													<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
-													@elseif ($product->rate - $i > 0)
-														{{--Half Start--}}
-													<li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
-													@else
-														{{--Empty Start--}}
-													<li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
-													@endif
-												@endfor
+													@for ($i = 0; $i < 5; $i++)
+														@if (floor($product->rate) - $i >= 1)
+															{{--Full Start--}}
+														<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+														@elseif ($product->rate - $i > 0)
+															{{--Half Start--}}
+														<li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+														@else
+															{{--Empty Start--}}
+														<li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>
+														@endif
+													@endfor
+													<span>({{$product->count}})</span>
 												</ul>
 												{{--End Rating--}}
 											</div>

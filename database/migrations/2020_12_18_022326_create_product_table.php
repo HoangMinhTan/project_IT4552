@@ -19,9 +19,9 @@ class CreateProductTable extends Migration
             $table->integer('quantity');
             $table->bigInteger('category_id')->unsigned();
             $table->bigInteger('manufacturer_id')->unsigned();
-            $table->integer('in_price');
+            $table->float('rate');
             $table->integer('out_price');
-            $table->string('note')->nullable();
+            $table->longText('note')->nullable();
             $table->timestamps();
             $table->foreign('category_id')->references('id')->on('category');
             $table->foreign('manufacturer_id')->references('id')->on('manufacturer');

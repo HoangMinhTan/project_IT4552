@@ -1,4 +1,4 @@
-id,name,quantity,category_id,manufacturer_id,in_price,out_price,note,created_at
-1,dsfacd,3,1,2,234,534,,
-2,foadjcs,1,1,1,345,2334,,
-3,slkfje,3,2,2,123,2432,,
+id,name,quantity,category_id,manufacturer_id,rate,out_price,note,created_at
+1,dsfacd,3,1,2,3.5,534,,
+2,foadjcs,1,1,1,4,2334,,
+3,slkfje,3,2,2,1,2432,,

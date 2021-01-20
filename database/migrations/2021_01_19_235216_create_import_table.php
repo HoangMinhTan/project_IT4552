@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRateTable extends Migration
+class CreateImportTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,14 @@ class CreateRateTable extends Migration
      */
     public function up()
     {
-        Schema::create('rate', function (Blueprint $table) {
+        Schema::create('import', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('user_id')->unsigned();
+            $table->bigInteger('supplier_id')->unsigned();
             $table->bigInteger('product_id')->unsigned();
-            $table->integer('rate');
-            $table->longText('review')->nullable();
+            $table->integer('quantity');
+            $table->integer('in_price');
             $table->timestamps();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('supplier_id')->references('id')->on('supplier');
             $table->foreign('product_id')->references('id')->on('product');
         });
     }
@@ -32,6 +32,6 @@ class CreateRateTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rate');
+        Schema::dropIfExists('import');
     }
 }
