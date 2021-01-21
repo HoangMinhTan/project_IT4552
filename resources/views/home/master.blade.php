@@ -86,8 +86,9 @@
 				</ul>
 			</div>
 			<div id="cd-search" class="cd-search">
-				<form action="#" method="post">
-					<input name="Search" type="search" placeholder="Click enter after typing...">
+				<form action="{{'search'}}" method="post">
+					<input type="hidden" name="_token" value="{{csrf_token()}}">
+					<input name="search" type="search" placeholder="Click enter after typing...">
 				</form>
 			</div>
 		</div>
@@ -102,6 +103,8 @@
 	</div>
     
 	@yield('content')
+
+	
 	
 	<!-- /newsletter-->
 	<div class="newsletter_w3layouts_agile">

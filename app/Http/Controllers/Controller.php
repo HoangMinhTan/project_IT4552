@@ -206,4 +206,36 @@ class Controller extends BaseController
         }
         return view('home.shop', ['products'=> $products, 'categories'=>$category]);
     }
+
+    public function search(Request $request){
+        $products = DB::table('product')->where('name', 'like', '%'.$request->search.'%')->get();
+        if ($request->range != null){
+            
+            $start1 = 1;
+            $end2 = strlen($request->range) -1 ;
+            for ($i =0; $i<strlen($request->range); $i++){
+                if ($request->range[$i] == '$') $start2 = $i+1;
+                if ($request->range[$i] == '-') $end1 = $i-2;
+            }
+    
+            $min = (int)substr($request->range, $start1, $end1);
+            $max = (int)substr($request->range, $start2, $end2);
+
+            $products = DB::table('product')->where('name', 'like', '%'.$request->search.'%')
+                                            ->where('out_price', '>=', $min)
+                                            ->where('out_price', '<=', $max)
+                                            ->paginate(9);
+            echo $products;
+        }
+        else{
+            $products = DB::table('product')->where('name', 'like', '%'.$request->search.'%')->paginate(9);
+        }
+        
+        $category = Category::all();
+        foreach ($products as $product){
+            $count = DB::table('rate')->where('product_id', $product->id)->count();
+            $product->count = $count;
+        }
+        return view('home.shop', ['products'=> $products, 'categories'=>$category]);
+    }
 }

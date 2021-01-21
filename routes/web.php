@@ -33,6 +33,7 @@ Route::post('single/checkout', 'App\Http\Controllers\Controller@Psinglecheckout'
 Route::post('checkout', 'App\Http\Controllers\Controller@Pcheckout')->name('Pcheckout');
 Route::post('payment', 'App\Http\Controllers\Controller@Ppayment')->name('Ppayment');
 Route::get('search_rate_{rate}','App\Http\Controllers\Controller@search_rate')->name('search_rate');
+Route::post('search', 'App\Http\Controllers\Controller@search')->name('search');
 
 Route::get('payment', 'App\Http\Controllers\Controller@payment')->name('payment');
 

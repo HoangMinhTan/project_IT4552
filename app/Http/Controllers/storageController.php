@@ -29,7 +29,7 @@ class storageController extends Controller
             'quantity' => 0,
             'category_id'=> $request->category_id,
             'manufacturer_id' => $request->manufacturer_id,
-            'in_price' => 0,
+            'rate' => 0,
             'out_price'=>$request->out_price,
             'note'=> $request->note
         ]);
